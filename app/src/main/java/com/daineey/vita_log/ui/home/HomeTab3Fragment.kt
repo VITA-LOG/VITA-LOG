@@ -33,13 +33,8 @@ class HomeTab3Fragment : Fragment() {
 //        HomeViewModel.text.observe(viewLifecycleOwner) {
 //            textView.text = it
 //        }
-
-
-
         return root
     }
-
-
 
     override fun onDestroyView() {
         super.onDestroyView()
