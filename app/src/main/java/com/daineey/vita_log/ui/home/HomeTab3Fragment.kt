@@ -8,11 +8,11 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.daineey.vita_log.R
-import com.daineey.vita_log.databinding.FragmentHomeBinding
+import com.daineey.vita_log.databinding.FragmentHometab3Binding
 
-class HomeFragment : Fragment() {
+class HomeTab3Fragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentHometab3Binding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -26,7 +26,7 @@ class HomeFragment : Fragment() {
         val HomeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentHometab3Binding.inflate(inflater, container, false)
         val root: View = binding.root
 
 //        val textView: TextView = binding.textHome

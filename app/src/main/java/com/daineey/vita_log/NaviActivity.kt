@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.daineey.vita_log.databinding.ActivityNaviBinding
-import com.daineey.vita_log.ui.home.HomeFragment
+import com.daineey.vita_log.ui.home.HomeTab1Fragment
 
 
 private const val TAG_HOME = "home_fragment"
@@ -25,11 +25,11 @@ class NaviActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        setFragment(TAG_HOME, HomeFragment())
+        setFragment(TAG_HOME, HomeTab1Fragment())
 
         binding.navigationView.setOnItemSelectedListener { item ->
             when(item.itemId) {
-                R.id.home -> setFragment(TAG_HOME, com.daineey.vita_log.ui.home.HomeFragment())
+                R.id.home -> setFragment(TAG_HOME, com.daineey.vita_log.ui.home.HomeTab1Fragment())
                 R.id.profile -> setFragment(TAG_PROFILE, com.daineey.vita_log.ui.profile.ProfileFragment())
                 R.id.search_photo-> setFragment(TAG_SEARCH, com.daineey.vita_log.ui.search.SearchFragment())
                 R.id.chat-> setFragment(TAG_CHAT, com.daineey.vita_log.ui.chat.ChatFragment())

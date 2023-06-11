@@ -7,7 +7,7 @@ import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.widget.Toolbar
-import com.daineey.vita_log.ui.home.HomeFragment
+import com.daineey.vita_log.ui.home.HomeTab1Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             // Create a new Fragment to be placed in the activity layout
-            val firstFragment = HomeFragment()
+            val firstFragment = HomeTab1Fragment()
 
             // Add the fragment to the 'fragment_container' FrameLayout
             supportFragmentManager.beginTransaction()
