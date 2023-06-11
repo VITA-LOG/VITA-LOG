@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.VITA_LOG" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your light theme here. -->
+        <item name="myButtonStyle">@style/MyButtonStyle</item>
+        <item name="myButtonStyle2">@style/MyButtonStyle</item>
+        <item name="myButtonStyle3">@style/MyButtonStyle</item>
+
+    </style>
+
+    <style name="MyButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MyButtonStyle2" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MyButtonStyle3" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="CustomTabText" parent="Base.TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="android:textColor">@color/black</item>
+        <!-- You can add other styling attributes here -->
+    </style>
+
+    <style name="Theme.VITA_LOG" parent="Base.Theme.VITA_LOG" />
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "855264744988",
+    "project_id": "vita-log",
+    "storage_bucket": "vita-log.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855264744988:android:4dbb29fac3ff031da8b1d9",
+        "android_client_info": {
+          "package_name": "com.daineey.vita_log"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855264744988-rsvm00gn4e380blltu54d67a3n7d333q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.daineey.vita_log",
+            "certificate_hash": "d9a4980db554e9d291482f92a0db64f6f3c284c0"
+          }
+        },
+        {
+          "client_id": "855264744988-srehpb43jq15cqmq9iqk7nqhe4giljco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYR17Zvb2Sf1Q_OXqB6vE3VxteJwK-JAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855264744988-srehpb43jq15cqmq9iqk7nqhe4giljco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
