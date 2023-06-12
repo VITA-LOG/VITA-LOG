@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph.xml"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/homeTab1Fragment">
 
     <fragment
@@ -18,5 +18,9 @@
         android:id="@+id/gutHealthFragment"
         android:name="com.daineey.vita_log.GutHealthFragment"
         android:label="fragment_gut_health"
-        tools:layout="@layout/fragment_gut_health" />
+        tools:layout="@layout/fragment_gut_health" >
+        <action
+            android:id="@+id/action_gutHealthFragment_to_homeTab1Fragment"
+            app:destination="@id/homeTab1Fragment" />
+    </fragment>
 </navigation>

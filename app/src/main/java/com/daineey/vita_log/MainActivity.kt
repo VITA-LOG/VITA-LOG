@@ -41,61 +41,28 @@ class MainActivity : AppCompatActivity() {
         val manager: FragmentManager = supportFragmentManager
         val fragTransaction = manager.beginTransaction()
 
-        if (manager.findFragmentByTag(tag) == null){
-            fragTransaction.add(R.id.mainFrameLayout, fragment, tag)
+        // All existing fragments are hidden first.
+        for (existingFragment in manager.fragments) {
+            fragTransaction.hide(existingFragment)
         }
 
-        val home = manager.findFragmentByTag(TAG_HOME)
-        val profile = manager.findFragmentByTag(TAG_PROFILE)
-        val search = manager.findFragmentByTag(TAG_SEARCH)
-        val chat = manager.findFragmentByTag(TAG_CHAT)
-        val myPage = manager.findFragmentByTag(TAG_MY)
+        var fragment = manager.findFragmentByTag(tag)
 
-        if (home != null){
-            fragTransaction.hide(home)
-        }
-
-        if (profile != null){
-            fragTransaction.hide(profile)
-        }
-
-        if (search != null) {
-            fragTransaction.hide(search)
-        }
-
-        if (chat != null) {
-            fragTransaction.hide(chat)
-        }
-
-        if (myPage != null) {
-            fragTransaction.hide(myPage)
-        }
-
-        if (tag == TAG_HOME) {
-            if (home!=null){
-                fragTransaction.show(home)
+        if (fragment == null){
+            fragment = when (tag) {
+                TAG_HOME -> com.daineey.vita_log.ui.home.HomeFragment()
+                TAG_PROFILE -> com.daineey.vita_log.ui.profile.ProfileFragment()
+                TAG_SEARCH -> com.daineey.vita_log.ui.search.SearchFragment()
+                TAG_CHAT -> com.daineey.vita_log.ui.chat.ChatFragment()
+                TAG_MY -> com.daineey.vita_log.ui.my.MyFragment()
+                else -> throw IllegalArgumentException("Unexpected tag: $tag")
             }
+            fragTransaction.add(R.id.fragmentContainer, fragment, tag)
+        } else {
+            fragTransaction.show(fragment)
         }
-        else if (tag == TAG_PROFILE) {
-            if (profile != null) {
-                fragTransaction.show(profile)
-            }
-        }
-        else if (tag == TAG_SEARCH) {
-            if (search != null) {
-                fragTransaction.show(search)
-            }
-        }
-        else if (tag == TAG_CHAT) {
-            if (chat != null) {
-                fragTransaction.show(chat)
-            }
-        }
-        else if (tag == TAG_MY){
-            if (myPage != null){
-                fragTransaction.show(myPage)
-            }
-        }
+
         fragTransaction.commitAllowingStateLoss()
     }
+
 }
