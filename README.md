@@ -23,7 +23,7 @@
   * <img src="https://img.shields.io/badge/Google Colab-F9AB00?style=flat&logo=React&logoColor=white"/>
   * <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=React&logoColor=white"/>
   * <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=React&logoColor=white"/>
-  * <img src="https://img.shields.io/badge/Figma-F24E1E-?style=flat&logo=React&logoColor=white"/>
+  * <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=React&logoColor=white"/>
 
 <br/><br/>
 
