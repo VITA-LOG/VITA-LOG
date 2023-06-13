@@ -18,7 +18,7 @@
 
 * Language / IDE
   * <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=React&logoColor=white"/>
-  * <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=React&logoColor=white"/>
+  * <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
   * <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=React&logoColor=white"/>
   * <img src="https://img.shields.io/badge/Google Colab-F9AB00?style=flat&logo=React&logoColor=white"/>
   * <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=React&logoColor=white"/>
