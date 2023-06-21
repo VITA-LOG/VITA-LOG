@@ -92,31 +92,27 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-            <ImageView
-                android:id="@+id/skin_care"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="96dp"
-                android:layout_marginEnd="19dp"
-                android:src="@drawable/ic_skin_care"
-                app:layout_constraintEnd_toStartOf="@+id/daily_energy"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/exercise_supplement"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <ImageView
+            android:id="@+id/skin_care"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="19dp"
+            android:src="@drawable/ic_skin_care"
+            app:layout_constraintEnd_toStartOf="@+id/daily_energy"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/exercise_supplement"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <ImageView
             android:id="@+id/etc"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginStart="216dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="115dp"
             android:src="@drawable/ic_etc"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/daily_energy" />
+            app:layout_constraintEnd_toStartOf="@+id/sleep"
+            app:layout_constraintStart_toEndOf="@+id/skin_care"
+            app:layout_constraintTop_toTopOf="@+id/skin_care" />
 
 
         <TextView

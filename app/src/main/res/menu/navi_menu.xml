@@ -9,13 +9,6 @@
         android:title="HOME" />
 
     <item
-        android:id="@+id/profile"
-        app:showAsAction="ifRoom"
-        android:enabled="true"
-        android:icon="@drawable/ic_profile_black"
-        android:title="PROFILE" />
-
-    <item
         android:id="@+id/search_photo"
         app:showAsAction="ifRoom"
         android:enabled="true"
@@ -28,13 +21,5 @@
         android:enabled="true"
         android:icon="@drawable/ic_chat_black"
         android:title="CHAT" />
-
-    <item
-        android:id="@+id/my"
-        app:showAsAction="ifRoom"
-        android:enabled="true"
-        android:icon="@drawable/ic_my_black"
-        android:title="MY" />
-
 
 </menu>
