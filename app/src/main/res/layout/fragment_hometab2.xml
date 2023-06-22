@@ -1,5 +1,4 @@
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,13 +12,13 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="417dp"
-            android:layout_height="335dp"
-            android:layout_marginTop="50dp"
+            android:layout_height="385dp"
             android:layout_weight="0"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_yellow" />
+            app:srcCompat="@drawable/ic_yellow"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView"
@@ -74,7 +73,6 @@
             android:src="@drawable/ic_gut_health_white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

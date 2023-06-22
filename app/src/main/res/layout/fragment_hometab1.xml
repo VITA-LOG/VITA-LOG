@@ -1,5 +1,4 @@
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -21,76 +20,74 @@
             app:srcCompat="@drawable/ic_purple"
             app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView"
-                style="@style/MyButtonStyle2"
-                android:layout_width="150dp"
-                android:layout_height="48dp"
-                android:layout_marginEnd="261dp"
-                android:background="@android:color/transparent"
-                android:text="내 건강키워드"
-                android:textColor="#000000"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <TextView
+            android:id="@+id/textView"
+            style="@style/MyButtonStyle2"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="261dp"
+            android:background="@android:color/transparent"
+            android:text="내 건강키워드"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+        <ImageButton
+            android:id="@+id/gut_health"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Gut Health"
+            android:src="@drawable/ic_gut_health"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-            <ImageButton
-                android:id="@+id/gut_health"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="16dp"
-                android:background="?attr/selectableItemBackground"
-                android:contentDescription="Gut Health"
-                android:src="@drawable/ic_gut_health"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <ImageView
+            android:id="@+id/junlipsun"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="19dp"
+            android:src="@drawable/ic_junlipsun"
+            app:layout_constraintEnd_toStartOf="@+id/daily_energy"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/gut_health"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+        <ImageView
+            android:id="@+id/daily_energy"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/ic_daily_energy"
+            app:layout_constraintEnd_toStartOf="@+id/sleep"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-            <ImageView
-                android:id="@+id/junlipsun"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="22dp"
-                android:layout_marginEnd="19dp"
-                android:src="@drawable/ic_junlipsun"
-                app:layout_constraintEnd_toStartOf="@+id/daily_energy"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/gut_health"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <ImageView
+            android:id="@+id/sleep"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/ic_sleep"
+            app:layout_constraintStart_toEndOf="@+id/daily_energy"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-            <ImageView
-                android:id="@+id/daily_energy"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="48dp"
-                android:layout_marginEnd="17dp"
-                android:src="@drawable/ic_daily_energy"
-                app:layout_constraintEnd_toStartOf="@+id/sleep"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-            <ImageView
-                android:id="@+id/sleep"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="48dp"
-                android:src="@drawable/ic_sleep"
-                app:layout_constraintStart_toEndOf="@+id/daily_energy"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-            <ImageView
-                android:id="@+id/exercise_supplement"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="96dp"
-                android:src="@drawable/ic_exercise_supplement"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <ImageView
+            android:id="@+id/exercise_supplement"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="96dp"
+            android:src="@drawable/ic_exercise_supplement"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <ImageView
             android:id="@+id/skin_care"
@@ -113,7 +110,6 @@
             app:layout_constraintEnd_toStartOf="@+id/sleep"
             app:layout_constraintStart_toEndOf="@+id/skin_care"
             app:layout_constraintTop_toTopOf="@+id/skin_care" />
-
 
         <TextView
             android:id="@+id/textview2"
@@ -143,7 +139,5 @@
             app:layout_constraintTop_toBottomOf="@+id/textview2"
             app:srcCompat="@drawable/ic_cards" />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.core.widget.NestedScrollView>
