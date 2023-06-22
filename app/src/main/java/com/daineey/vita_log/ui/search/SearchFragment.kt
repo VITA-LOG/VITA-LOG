@@ -1,27 +1,29 @@
 package com.daineey.vita_log.ui.search
 
+import android.Manifest
+import android.app.Activity
+import android.content.ContentResolver
+import android.content.ContentValues
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
-import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.daineey.vita_log.R
 import com.daineey.vita_log.databinding.FragmentSearchBinding
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.ktx.storage
-import com.google.firebase.storage.ktx.storageMetadata
-import com.googlecode.tesseract.android.TessBaseAPI
-import java.io.ByteArrayOutputStream
-import java.io.File
-import java.io.FileInputStream
+import java.io.FileOutputStream
+import java.text.SimpleDateFormat
+
 
 /**
  * A simple [Fragment] subclass.
@@ -30,102 +32,159 @@ import java.io.FileInputStream
  */
 class SearchFragment : Fragment() {
 
-    lateinit var tess: TessBaseAPI //Tesseract API 객체 생성
-    var image: Bitmap? = null
-    var datapath: String = "" //데이터 경로 변수 선언
-
     private var _binding: FragmentSearchBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+    val CAMERA = arrayOf(Manifest.permission.CAMERA)
+    val STORAGE = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE,
+        Manifest.permission.WRITE_EXTERNAL_STORAGE)
+    val CAMERA_CODE = 98
+    val STORAGE_CODE = 99
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val v: View = inflater.inflate(R.layout.fragment_search, container, false)
-
+    ): View {
         val SearchViewModel =
             ViewModelProvider(this).get(SearchViewModel::class.java)
 
         _binding = FragmentSearchBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        fun includesForUploadFiles() {
-            val storage = Firebase.storage
-
-            // [START upload_create_reference]
-            // Create a storage reference from our app
-            val storageRef = storage.reference
-
-            // Create a reference to "mountains.jpg"
-            val mountainsRef = storageRef.child("sample_eng.png")
-
-            // Create a reference to 'images/mountains.jpg'
-            val mountainImagesRef = storageRef.child("images/sample_eng.png")
-
-            // While the file names are the same, the references point to different files
-            mountainsRef.name == mountainImagesRef.name // true
-            mountainsRef.path == mountainImagesRef.path // false
-            // [END upload_create_reference]
-
-            val imageView = v.findViewById<ImageView>(R.id.sample_image)
-            // [START upload_memory]
-            // Get the data from an ImageView as bytes
-            imageView.isDrawingCacheEnabled = true
-            imageView.buildDrawingCache()
-            val bitmap = (imageView.drawable as BitmapDrawable).bitmap
-            val baos = ByteArrayOutputStream()
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos)
-            val data = baos.toByteArray()
-
-            var uploadTask = mountainsRef.putBytes(data)
-            uploadTask.addOnFailureListener {
-                // Handle unsuccessful uploads
-            }.addOnSuccessListener { taskSnapshot ->
-                // taskSnapshot.metadata contains file metadata such as size, content-type, etc.
-                // ...
-            }
-            // [END upload_memory]
-
-            // [START upload_file]
-            var file = Uri.fromFile(File("path/to/images/sample_eng.png"))
-            val riversRef = storageRef.child("images/${file.lastPathSegment}")
-            uploadTask = riversRef.putFile(file)
-
-            // Register observers to listen for when the download is done or if it fails
-            uploadTask.addOnFailureListener {
-                // Handle unsuccessful uploads
-            }.addOnSuccessListener { taskSnapshot ->
-                // taskSnapshot.metadata contains file metadata such as size, content-type, etc.
-                // ...
-            }
-            // [END upload_file]
-
-            // [START upload_stream]
-            val stream = FileInputStream(File("path/to/images/rivers.jpg"))
-
-            uploadTask = mountainsRef.putStream(stream)
-            uploadTask.addOnFailureListener {
-                // Handle unsuccessful uploads
-            }.addOnSuccessListener { taskSnapshot ->
-                // taskSnapshot.metadata contains file metadata such as size, content-type, etc.
-                // ...
-            }
-//            // [END upload_stream]
+        val camera = view?.findViewById<Button>(R.id.camera)
+        camera?.setOnClickListener {
+            CallCamera()
         }
 
-        val counter_num = v.findViewById<TextView>(R.id.ocr_result_view)
-        val btn_event = v.findViewById<Button>(R.id.ocr_start_button)
-
-        btn_event.setOnClickListener {
-            includesForUploadFiles()
+        // 사진 저장
+        val picture = view?.findViewById<Button>(R.id.picture)
+        picture?.setOnClickListener {
+            GetAlbum()
         }
-
-        return v
+        return root
     }
 
+    // 카메라 권한, 저장소 권한
+    // 요청 권한
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+        when(requestCode){
+            CAMERA_CODE -> {
+                for (grant in grantResults){
+                    if(grant != PackageManager.PERMISSION_GRANTED){
+                        Toast.makeText(getActivity(), "카메라 권한을 승인해 주세요", Toast.LENGTH_LONG).show()
+                    }
+                }
+            }
+            STORAGE_CODE -> {
+                for(grant in grantResults){
+                    if(grant != PackageManager.PERMISSION_GRANTED){
+                        Toast.makeText(getActivity(), "저장소 권한을 승인해 주세요", Toast.LENGTH_LONG).show()
+                    }
+                }
+            }
+        }
+    }
+
+    // 다른 권한등도 확인이 가능하도록
+    fun checkPermission(permissions: Array<out String>, type:Int):Boolean{
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+            for (permission in permissions){
+                if(ContextCompat.checkSelfPermission(requireActivity(), permission)
+                    != PackageManager.PERMISSION_GRANTED){
+                    ActivityCompat.requestPermissions(requireActivity(), permissions, type)
+                    return false
+                }
+            }
+        }
+        return true
+    }
+
+    // 카메라 촬영 - 권한 처리
+    fun CallCamera(){
+        if(checkPermission(CAMERA, CAMERA_CODE) && checkPermission(STORAGE, STORAGE_CODE)){
+            val itt = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+            startActivityForResult(itt, CAMERA_CODE)
+        }
+    }
+
+    // 사진 저장
+    fun saveFile(fileName:String, mimeType:String, bitmap: Bitmap):Uri?{
+
+        var CV = ContentValues()
+
+        // MediaStore 에 파일명, mimeType 을 지정
+        CV.put(MediaStore.Images.Media.DISPLAY_NAME, fileName)
+        CV.put(MediaStore.Images.Media.MIME_TYPE, mimeType)
+
+        // 안정성 검사
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
+            CV.put(MediaStore.Images.Media.IS_PENDING, 1)
+        }
+
+        val contentResolver: ContentResolver = requireActivity().getContentResolver()
+
+        // MediaStore 에 파일을 저장
+        val uri = contentResolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, CV)
+        if(uri != null){
+            var scriptor = contentResolver.openFileDescriptor(uri, "w")
+
+            val fos = FileOutputStream(scriptor?.fileDescriptor)
+
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos)
+            fos.close()
+
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
+                CV.clear()
+                // IS_PENDING 을 초기화
+                CV.put(MediaStore.Images.Media.IS_PENDING, 0)
+                contentResolver.update(uri, CV, null, null)
+            }
+        }
+        return uri
+    }
+
+    // 결과
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        val imageView = view?.findViewById<ImageView>(R.id.avatars)
+
+        if(resultCode == Activity.RESULT_OK){
+            when(requestCode){
+                CAMERA_CODE -> {
+                    if(data?.extras?.get("data") != null){
+                        val img = data?.extras?.get("data") as Bitmap
+                        val uri = saveFile(RandomFileName(), "image/jpeg", img)
+                        imageView?.setImageURI(uri)
+                    }
+                }
+                STORAGE_CODE -> {
+                    val uri = data?.data
+                    imageView?.setImageURI(uri)
+                }
+            }
+        }
+    }
+
+    // 파일명을 날짜 저장
+    fun RandomFileName() : String{
+        val fileName = SimpleDateFormat("yyyyMMddHHmmss").format(System.currentTimeMillis())
+        return fileName
+    }
+
+    // 갤러리 취득
+    fun GetAlbum(){
+        if(checkPermission(STORAGE, STORAGE_CODE)){
+            val itt = Intent(Intent.ACTION_PICK)
+            itt.type = MediaStore.Images.Media.CONTENT_TYPE
+            startActivityForResult(itt, STORAGE_CODE)
+        }
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
