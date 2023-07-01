@@ -1,12 +1,12 @@
 <img src="./images/1.png" width="100%" height="100%"/>
 
-<br/><br/>
+<br/>
 
 * People
   * [Yeongjin Kim](https://github.com/kyj950514 "김영진")
   * [dain Hong](https://github.com/daineey "홍다인")
 
-<br/><br/>
+<br/>
 
 * Language / IDE
   * <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=Kotlin&logoColor=white"/>
