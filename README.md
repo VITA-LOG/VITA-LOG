@@ -1,12 +1,4 @@
-<p align="left">
-  <img src="./images/9-1.png" width="24%" height="20%"/>
-  <img src="./images/9-2.png" width="24%" height="20%"/>
-  <img src="./images/9-3.png" width="24%" height="20%"/>
-  <img src="./images/9-6.png" width="24%" height="20%"/>
-  <img src="./images/9-7.png" width="24%" height="20%"/>
-  <img src="./images/9-4.png" width="24%" height="20%"/>
-  <img src="./images/9-5.png" width="24%" height="20%"/>
-</p>
+<img src="./images/1.png" width="100%" height="100%"/>
 
 <br/><br/>
 
@@ -26,6 +18,20 @@
   * <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white"/>
 
 <br/><br/>
+
+## UX Design
+
+<p align="left">
+  <img src="./images/9-1.png" width="24%" height="20%"/>
+  <img src="./images/9-2.png" width="24%" height="20%"/>
+  <img src="./images/9-3.png" width="24%" height="20%"/>
+  <img src="./images/9-6.png" width="24%" height="20%"/>
+  <img src="./images/9-7.png" width="24%" height="20%"/>
+  <img src="./images/9-4.png" width="24%" height="20%"/>
+  <img src="./images/9-5.png" width="24%" height="20%"/>
+</p>
+
+<br/>
 
 ## UX Design
 
