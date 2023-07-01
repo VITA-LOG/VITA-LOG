@@ -19,7 +19,7 @@
 
 <br/>
 
-## UX Design
+## Prototype
 
 <p align="left">
   <img src="./images/9-1.png" width="24%" height="20%"/>
