@@ -24,7 +24,7 @@
   <img src="./images/9-5.png" width="24%" height="20%"/>
 </p>
 
-## UX Design
+## UX Principle
 
 <img src="./images/3.png" width="100%" height="150%"/>
 
