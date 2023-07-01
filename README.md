@@ -17,7 +17,7 @@
   * <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=Firebase&logoColor=white"/>
   * <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white"/>
 
-<br/><br/>
+<br/>
 
 ## UX Design
 
