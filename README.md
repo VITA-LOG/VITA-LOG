@@ -26,7 +26,7 @@
 
 ## UX Principle
 
-<img src="./images/3.png" width="100%" height="150%"/>
+<img src="./images/3.png" width="100%" height="100%"/>
 
 ## Service Map
 
