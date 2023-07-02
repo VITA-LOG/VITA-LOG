@@ -28,10 +28,10 @@
 
 <img src="./images/3.png" width="100%" height="150%"/>
 
-## BluePrint
-
-<img src="./images/2-1.png" width="100%" height="100%"/>
-
 ## Service Map
 
 <img src="./images/2-2.png" width="60%" height="50%"/>
+
+## BluePrint
+
+<img src="./images/2-1.png" width="100%" height="100%"/>
