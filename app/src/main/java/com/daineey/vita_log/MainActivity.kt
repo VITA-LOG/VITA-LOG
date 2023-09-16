@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.navigationView.setOnItemSelectedListener { item ->
             when(item.itemId) {
-                R.id.home -> setFragment(TAG_HOME, com.daineey.vita_log.ui.home.HomeFragment())
+                R.id.home -> setFragment(TAG_HOME, HomeFragment())
                 R.id.search_photo-> setFragment(TAG_SEARCH, com.daineey.vita_log.ui.search.SearchFragment())
                 R.id.chat-> setFragment(TAG_CHAT, com.daineey.vita_log.ui.chat.ChatFragment())
             }
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
         if (fragment == null){
             fragment = when (tag) {
-                TAG_HOME -> com.daineey.vita_log.ui.home.HomeFragment()
+                TAG_HOME -> HomeFragment()
                 TAG_SEARCH -> com.daineey.vita_log.ui.search.SearchFragment()
                 TAG_CHAT -> com.daineey.vita_log.ui.chat.ChatFragment()
                 else -> throw IllegalArgumentException("Unexpected tag: $tag")
