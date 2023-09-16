@@ -2,8 +2,8 @@
 
 ## People
 
-* [Yeongjin Kim](https://github.com/youngjeanskr "김영진")
-* [dain Hong](https://github.com/daineey "홍다인")
+* [YoungJeansKR](https://github.com/youngjeanskr "김영진")
+* [daineey](https://github.com/daineey "홍다인")
 
 ## Language / IDE
 
