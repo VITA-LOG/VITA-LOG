@@ -26,4 +26,22 @@
         app:labelVisibilityMode="labeled"
         />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:backgroundTint="@color/purple_500"
+        android:elevation="0dp"
+        android:src="@drawable/ic_search_photo_black"
+        app:borderWidth="0dp"
+        app:elevation="8dp"
+        app:fabCustomSize="52dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragmentContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="36dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,1 @@
+sdk.dir=/Users/daineey/Library/Android/sdk
