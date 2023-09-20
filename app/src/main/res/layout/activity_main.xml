@@ -30,7 +30,7 @@
         android:id="@+id/main_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="635dp"
+        android:layout_marginTop="675dp"
         android:backgroundTint="@color/purple_500"
         android:elevation="0dp"
         android:src="@drawable/ic_search_photo_white"
