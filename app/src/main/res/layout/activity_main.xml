@@ -23,8 +23,7 @@
         app:itemIconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/navi_menu"
-        app:labelVisibilityMode="labeled"
-        />
+        app:labelVisibilityMode="labeled" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/main_fab"
