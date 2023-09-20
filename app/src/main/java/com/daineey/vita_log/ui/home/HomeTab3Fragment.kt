@@ -77,7 +77,6 @@ class HomeTab3Fragment : Fragment() {
             var intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://n.news.naver.com/mnews/article/586/0000027716?sid=103"))
             startActivity(intent)
         }
-
     }
 
     override fun onDestroyView() {

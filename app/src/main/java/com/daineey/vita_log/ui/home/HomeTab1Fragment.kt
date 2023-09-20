@@ -32,10 +32,6 @@ class HomeTab1Fragment : Fragment() {
         _binding = FragmentHometab1Binding.inflate(inflater, container, false)
         val root: View = binding.root
 
-//        val textView: TextView = binding.textHome
-//        HomeViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
         return root
     }
 

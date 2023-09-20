@@ -6,12 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import android.content.DialogInterface
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.daineey.vita_log.R
 import com.daineey.vita_log.databinding.FragmentHomeBinding
 import com.daineey.vita_log.databinding.FragmentHometab2Binding
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -20,6 +22,7 @@ class HomeFragment : Fragment() {
     private lateinit var tabLayout: TabLayout
     private lateinit var viewPager: ViewPager2
     private lateinit var adapter: FragmentStateAdapter
+
 
     private var _binding: FragmentHomeBinding? = null
 
@@ -59,10 +62,8 @@ class HomeFragment : Fragment() {
             }
         }.attach()
 
-
         return view
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

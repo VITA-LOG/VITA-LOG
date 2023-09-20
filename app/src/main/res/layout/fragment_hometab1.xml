@@ -23,11 +23,11 @@
         <TextView
             android:id="@+id/textView"
             style="@style/MyButtonStyle2"
-            android:layout_width="150dp"
+            android:layout_width="135dp"
             android:layout_height="48dp"
             android:layout_marginEnd="261dp"
             android:background="@android:color/transparent"
-            android:text="내 건강키워드"
+            android:text="추천 키워드"
             android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
