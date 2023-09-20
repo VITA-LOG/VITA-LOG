@@ -7,7 +7,8 @@
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:icon="@drawable/ic_home_black"
-        android:title="HOME"/>
+        android:title="HOME"
+        android:fontFamily="@font/roboto_black" />
 
     <item
         android:id="@+id/search_photo"
@@ -21,6 +22,7 @@
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:icon="@drawable/ic_chat_black"
-        android:title="CHAT" />
+        android:title="CHAT"
+        android:fontFamily="@font/roboto_black" />
 
 </menu>
