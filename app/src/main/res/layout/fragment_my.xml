@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.my.MyFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_logo" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="20dp"
+        android:text="고객센터" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="20dp"
+        android:text="전화상담" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="20dp"
+        android:text="1대1문의" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="210dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="20dp"
+        android:text="개발관련문의" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="20dp"
+        android:text="광고문의" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="470dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="20dp"
+        android:text="개발진 프로필" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="510dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="20dp"
+        android:text="비타로그 크레딧" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="550dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="20dp"
+        android:text="오픈소스 라이선스" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="590dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="20dp"
+        android:text="이용약관" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="630dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="20dp"
+        android:text="개인정보 처리방침" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

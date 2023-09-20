@@ -22,12 +22,22 @@
             android:layout_height="30dp"
             android:src="@drawable/ic_logo" />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/action_chat"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="180dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_chat_black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
             android:id="@+id/action_search"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="230dp"
-            android:src="@drawable/ic_search_black" />
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_search_black"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </androidx.appcompat.widget.Toolbar>
 

@@ -1,13 +1,13 @@
-package com.daineey.vita_log.ui.chat
+package com.daineey.vita_log.ui.my
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class ChatViewModel : ViewModel() {
+class MyViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is chat Fragment"
+        value = "This is my Fragment"
     }
     val text: LiveData<String> = _text
 }

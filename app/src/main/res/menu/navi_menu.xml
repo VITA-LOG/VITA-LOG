@@ -14,15 +14,14 @@
         android:id="@+id/search_photo"
         app:showAsAction="ifRoom"
         android:enabled="false"
-        android:icon="@drawable/ic_search_photo_white"
         tools:ignore="MenuTitle" />
 
     <item
-        android:id="@+id/chat"
+        android:id="@+id/my"
         app:showAsAction="ifRoom"
         android:enabled="true"
-        android:icon="@drawable/ic_chat_black"
-        android:title="CHAT"
+        android:icon="@drawable/ic_my_black"
+        android:title="MY"
         android:fontFamily="@font/roboto_black" />
 
 </menu>
