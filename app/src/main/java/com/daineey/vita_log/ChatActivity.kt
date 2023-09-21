@@ -1,6 +1,7 @@
 package com.daineey.vita_log
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
@@ -107,7 +108,8 @@ class ChatActivity : ComponentActivity() {
     }
 
     override fun onBackPressed() {
-        super.onBackPressed()
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
     }
 }
 
