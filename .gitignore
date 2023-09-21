@@ -13,4 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
-/app/src/main/java/com/daineey/vita_log/constants
+/app/src/main/java/com/daineey/vita_log/constants/Constants.kt
