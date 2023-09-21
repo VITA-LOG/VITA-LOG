@@ -12,11 +12,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberAsyncImagePainter
+import com.daineey.vita_log.R
 import com.daineey.vita_log.constants.urlToAvatarGPT
 import com.daineey.vita_log.ui.conversations.ui.theme.ChatGPTLiteTheme
 import com.daineey.vita_log.ui.theme.BackGroundColor
@@ -37,40 +39,41 @@ fun AppBar(onClickMenu: () -> Unit) {
                     Box {
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Image(
-                                painter = rememberAsyncImagePainter(urlToAvatarGPT),
+                                painter = painterResource(R.drawable.ic_vitalog_app),
                                 modifier = paddingSizeModifier.then(Modifier.clip(RoundedCornerShape(6.dp))),
                                 contentScale = ContentScale.Crop,
                                 contentDescription = null
                             )
                             Spacer(modifier = Modifier.width(8.dp))
                             Text(
-                                text = "ChatGPT",
+                                text = "VITA LOG",
                                 textAlign = TextAlign.Center,
                                 fontSize = 16.5.sp,
                                 fontWeight = FontWeight.SemiBold,
+                                color = Color.DarkGray,
                             )
                             Spacer(modifier = Modifier.width(12.dp))
                         }
                     }
                 },
-                navigationIcon = {
-                    IconButton(
-                        onClick = {
-                            onClickMenu()
-                        },
-                    ) {
-                        Icon(
-                            Icons.Filled.Menu,
-                            "backIcon",
-                            modifier = Modifier.size(26.dp),
-                            tint = MaterialTheme.colorScheme.primary,
-                        )
-                    }
-                },
-                colors = TopAppBarDefaults.smallTopAppBarColors(
-                    containerColor = BackGroundColor,
-                    titleContentColor = Color.White,
-                ),
+//                navigationIcon = {
+//                    IconButton(
+//                        onClick = {
+//                            onClickMenu()
+//                        },
+//                    ) {
+//                        Icon(
+//                            Icons.Filled.Menu,
+//                            "backIcon",
+//                            modifier = Modifier.size(26.dp),
+//                            tint = MaterialTheme.colorScheme.primary,
+//                        )
+//                    }
+//                },
+//                colors = TopAppBarDefaults.smallTopAppBarColors(
+//                    containerColor = BackGroundColor,
+//                    titleContentColor = Color.White,
+//                ),
             )
         }
     }
