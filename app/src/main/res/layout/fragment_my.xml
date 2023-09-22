@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.my.MyFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -24,62 +27,53 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <Button
-        style="@style/TextButton"
+    <TextView
         android:id="@+id/customer"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
         android:text="고객센터"
+        android:textSize="18dp"
+        android:textAlignment="viewStart"
+        android:gravity="center"
+        android:paddingLeft="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="RtlCompat" />
     <Button
         style="@style/TextButton"
-        android:id="@+id/call"
-        android:text="전화상담"
+        android:id="@+id/question"
+        android:text="자주묻는 질문"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/customer" />
     <Button
         style="@style/TextButton"
-        android:id="@+id/develop"
-        android:text="개발관련문의"
+        android:id="@+id/contact"
+        android:text="문의하기"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/call" />
-    <Button
-        style="@style/TextButton"
-        android:id="@+id/advertise"
-        android:text="광고문의"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+    <TextView
+        android:id="@+id/use"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:text="이용안내"
+        android:textSize="18dp"
+        android:textAlignment="viewStart"
+        android:gravity="center"
+        android:paddingLeft="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/develop" />
-    <Button
-        style="@style/TextButton"
-        android:id="@+id/developer"
-        android:text="개발진 프로필"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/advertise" />
-    <Button
-        style="@style/TextButton"
-        android:id="@+id/credit"
-        android:text="비타로그 크레딧"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/developer" />
-    <Button
-        style="@style/TextButton"
-        android:id="@+id/license"
-        android:text="오픈소스 라이선스"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/credit" />
+        app:layout_constraintTop_toBottomOf="@+id/contact"
+        tools:ignore="RtlCompat" />
     <Button
         style="@style/TextButton"
         android:id="@+id/terms"
-        android:text="이용약관"
+        android:text="서비스 이용약관"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/license" />
+        app:layout_constraintTop_toBottomOf="@+id/use" />
     <Button
         style="@style/TextButton"
         android:id="@+id/privacy"
@@ -89,24 +83,59 @@
         app:layout_constraintTop_toBottomOf="@+id/terms" />
     <Button
         style="@style/TextButton"
-        android:id="@+id/privacychange"
-        android:text="개인정보 처리방침 변경 이력"
+        android:id="@+id/teenager"
+        android:text="청소년 보호정책"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/privacy" />
     <Button
         style="@style/TextButton"
-        android:id="@+id/authority"
-        android:text="이 앱이 사용하는 권한"
+        android:id="@+id/license"
+        android:text="오픈소스 라이선스"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/privacychange" />
+        app:layout_constraintTop_toBottomOf="@+id/teenager" />
+    <TextView
+        android:id="@+id/etc"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:text="기타"
+        android:textSize="18dp"
+        android:textAlignment="viewStart"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/license"
+        tools:ignore="RtlCompat" />
     <Button
         style="@style/TextButton"
-        android:id="@+id/information"
-        android:text="비타로그 정보"
+        android:id="@+id/intro"
+        android:text="비타로그 소개"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/authority" />
+        app:layout_constraintTop_toBottomOf="@+id/etc" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/developer"
+        android:text="개발자 소개"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intro" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/advertise"
+        android:text="광고문의"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developer" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/sponsor"
+        android:text="후원하기"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/advertise" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
