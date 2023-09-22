@@ -24,76 +24,89 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="90dp"
-        android:fontFamily="@font/roboto_black"
-        android:textSize="20dp"
-        android:text="고객센터" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="130dp"
-        android:fontFamily="@font/roboto_black"
-        android:textSize="20dp"
-        android:text="전화상담" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="170dp"
-        android:fontFamily="@font/roboto_black"
-        android:textSize="20dp"
-        android:text="1대1문의" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="210dp"
-        android:fontFamily="@font/roboto_black"
-        android:textSize="20dp"
-        android:text="개발관련문의" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="250dp"
-        android:fontFamily="@font/roboto_black"
-        android:textSize="20dp"
-        android:text="광고문의" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="470dp"
-        android:fontFamily="@font/roboto_black"
-        android:textSize="20dp"
-        android:text="개발진 프로필" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="510dp"
-        android:fontFamily="@font/roboto_black"
-        android:textSize="20dp"
-        android:text="비타로그 크레딧" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="550dp"
-        android:fontFamily="@font/roboto_black"
-        android:textSize="20dp"
-        android:text="오픈소스 라이선스" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="590dp"
-        android:fontFamily="@font/roboto_black"
-        android:textSize="20dp"
-        android:text="이용약관" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="630dp"
-        android:fontFamily="@font/roboto_black"
-        android:textSize="20dp"
-        android:text="개인정보 처리방침" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/customer"
+        android:text="고객센터"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/call"
+        android:text="전화상담"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customer" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/develop"
+        android:text="개발관련문의"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/advertise"
+        android:text="광고문의"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/develop" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/developer"
+        android:text="개발진 프로필"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/advertise" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/credit"
+        android:text="비타로그 크레딧"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developer" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/license"
+        android:text="오픈소스 라이선스"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credit" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/terms"
+        android:text="이용약관"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/license" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/privacy"
+        android:text="개인정보 처리방침"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terms" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/privacychange"
+        android:text="개인정보 처리방침 변경 이력"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacy" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/authority"
+        android:text="이 앱이 사용하는 권한"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacychange" />
+    <Button
+        style="@style/TextButton"
+        android:id="@+id/information"
+        android:text="비타로그 정보"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authority" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,5 +39,14 @@
         <!-- You can add other styling attributes here -->
     </style>
 
+    <style name="TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:layout_width">410dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
     <style name="Theme.VITA_LOG" parent="Base.Theme.VITA_LOG" />
 </resources>

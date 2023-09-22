@@ -40,7 +40,7 @@ fun AppBar(onClickMenu: () -> Unit) {
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Image(
                                 painter = painterResource(R.drawable.ic_vitalog_app),
-                                modifier = paddingSizeModifier.then(Modifier.clip(RoundedCornerShape(6.dp))),
+                                modifier = paddingSizeModifier.then(Modifier.clip(RoundedCornerShape(8.dp))),
                                 contentScale = ContentScale.Crop,
                                 contentDescription = null
                             )
@@ -50,7 +50,7 @@ fun AppBar(onClickMenu: () -> Unit) {
                                 textAlign = TextAlign.Center,
                                 fontSize = 16.5.sp,
                                 fontWeight = FontWeight.SemiBold,
-                                color = Color.DarkGray,
+                                color = Color.Yellow,
                             )
                             Spacer(modifier = Modifier.width(12.dp))
                         }
@@ -70,10 +70,9 @@ fun AppBar(onClickMenu: () -> Unit) {
 //                        )
 //                    }
 //                },
-//                colors = TopAppBarDefaults.smallTopAppBarColors(
-//                    containerColor = BackGroundColor,
-//                    titleContentColor = Color.White,
-//                ),
+                colors = TopAppBarDefaults.smallTopAppBarColors(
+                    containerColor = BackGroundColor,
+                ),
             )
         }
     }
