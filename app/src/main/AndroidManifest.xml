@@ -30,26 +30,76 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:launchMode="singleTask"
             android:theme="@style/Theme.VITA_LOG"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="adjustResize" />
         <!-- ChatActivity -->
         <activity
             android:name=".ChatActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:launchMode="singleTask"
             android:theme="@style/Theme.VITA_LOG"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="adjustResize" />
         <!-- MyActivity -->
+        <activity
+            android:name=".my.QuestionActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.VITA_LOG"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".my.ContactActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.VITA_LOG"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".my.TermsActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.VITA_LOG"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".my.PrivacyActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.VITA_LOG"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".my.TeenagerActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.VITA_LOG"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".my.LicenseActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:launchMode="singleTask"
             android:theme="@style/Theme.VITA_LOG"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".my.IntroActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.VITA_LOG"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".my.DeveloperActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.VITA_LOG"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".my.AdvertiseActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.VITA_LOG"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".my.SponsorActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.VITA_LOG"
+            android:windowSoftInputMode="adjustResize" />
     </application>
-
 </manifest>
