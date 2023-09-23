@@ -6,4 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".my.SponsorActivity">
 
+    <TextView
+        android:id="@+id/bank"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text='우리은행 1002-550-757193 김영진'
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat,TextSizeCheck" />
+    <TextView
+        android:id="@+id/bank1"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text='물론 없으시겠지만 혹시 후원을 해주시면 \n가난한 학식 생활에 큰 보탬이 될 것 같습니다.'
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank"
+        tools:ignore="RtlCompat,TextSizeCheck" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/heart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
 </androidx.constraintlayout.widget.ConstraintLayout>

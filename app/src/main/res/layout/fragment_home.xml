@@ -27,7 +27,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:backgroundTint="@color/white"
-            android:src="@drawable/ic_chat_black"
+            android:src="@drawable/ic_chat"
             android:layout_marginLeft="170dp"
             tools:ignore="SpeakableTextPresentCheck" />
 

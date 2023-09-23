@@ -41,6 +41,11 @@ tools:context=".my.TeenagerActivity">
 \n\n
 7. 청소년보호책임자 및 담당자의 지정\n
 아래와 같이 청소년보호책임자 및 청소년보호담당자를 지정하여 청소년유해정보의 차단 및 관리, 청소년유해정보로부터의 청소년보호정책을 수립하는 등 청소년보호업무를 수행하고 있습니다.\n
+\n
+▶ 청소년보호책임자 및 담당자\n
+성명 : 김영진\n
+직책 : 팀장\n
+연락처 : kyj950514@naver.com\n
 \n'
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

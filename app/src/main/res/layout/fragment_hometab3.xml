@@ -9,7 +9,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <ImageView
             android:id="@+id/article1"
             android:layout_width="410dp"
@@ -21,7 +20,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/article1"
             tools:ignore="SpeakableTextPresentCheck" />
-
         <ImageView
             android:id="@+id/article2"
             android:layout_width="410dp"
@@ -34,7 +32,6 @@
             app:layout_constraintTop_toBottomOf="@+id/article1"
             app:srcCompat="@drawable/article2"
             tools:ignore="SpeakableTextPresentCheck" />
-
         <ImageView
             android:id="@+id/article3"
             android:layout_width="410dp"
@@ -47,7 +44,6 @@
             app:layout_constraintTop_toBottomOf="@+id/article2"
             app:srcCompat="@drawable/article3"
             tools:ignore="SpeakableTextPresentCheck" />
-
         <ImageView
             android:id="@+id/article4"
             android:layout_width="410dp"
@@ -60,7 +56,6 @@
             app:layout_constraintTop_toBottomOf="@+id/article3"
             app:srcCompat="@drawable/article4"
             tools:ignore="SpeakableTextPresentCheck" />
-
         <ImageView
             android:id="@+id/article5"
             android:layout_width="410dp"
@@ -73,7 +68,6 @@
             app:layout_constraintTop_toBottomOf="@+id/article4"
             app:srcCompat="@drawable/article5"
             tools:ignore="SpeakableTextPresentCheck" />
-
         <ImageView
             android:id="@+id/article6"
             android:layout_width="410dp"
@@ -86,7 +80,6 @@
             app:layout_constraintTop_toBottomOf="@+id/article5"
             app:srcCompat="@drawable/article6"
             tools:ignore="SpeakableTextPresentCheck" />
-
         <ImageView
             android:id="@+id/article7"
             android:layout_width="410dp"
@@ -99,6 +92,102 @@
             app:layout_constraintTop_toBottomOf="@+id/article6"
             app:srcCompat="@drawable/article7"
             tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/article8"
+            android:layout_width="410dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article7"
+            app:srcCompat="@drawable/article8"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/article9"
+            android:layout_width="410dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article8"
+            app:srcCompat="@drawable/article9"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/article10"
+            android:layout_width="410dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article9"
+            app:srcCompat="@drawable/article10"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/article11"
+            android:layout_width="410dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article10"
+            app:srcCompat="@drawable/article11"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/article12"
+            android:layout_width="410dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article11"
+            app:srcCompat="@drawable/article12"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/article13"
+            android:layout_width="410dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article12"
+            app:srcCompat="@drawable/article13"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/article14"
+            android:layout_width="410dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article13"
+            app:srcCompat="@drawable/article14"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/article15"
+            android:layout_width="410dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article14"
+            app:srcCompat="@drawable/article15"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/text1"
@@ -108,7 +197,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/article7"
+            app:layout_constraintTop_toBottomOf="@+id/article15"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

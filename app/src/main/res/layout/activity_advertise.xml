@@ -1,9 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".my.AdvertiseActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/yogurtii"
+            android:layout_width="wrap_content"
+            android:layout_height="417dp"
+            android:src="@drawable/yogurtii"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </ImageView>
+        <TextView
+            android:id="@+id/yogurtii1"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="20dp"
+            android:text='\n
+\n
+[ DESIGN YOUR BOWL]\n
+나만의 건강한 보울을 만들어보세요!\n
+\n
+[HEALTHY &amp; WELLNESS]\n
+건강한 음식, 건강한 디저트를 요거트로 완성하세요!\n
+\n
+[PREMIUM YOGURT WITH FRESH MILK]\n
+국내산 1등급 생우유에 요거티 특제 레시피를 담은\n
+저당 요거트 아이스크림과 꾸덕 그릭 요거트를 즐겨보세요!\n\n
+'
+            android:textSize="14dp"
+            android:fontFamily="@font/roboto_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yogurtii"
+            tools:ignore="RtlCompat,TextSizeCheck" />
+        <TextView
+            android:id="@+id/yogurtii2"
+            android:theme="@style/link"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="20dp"
+            android:text='
+요거티 강남본점 0507-1395-1833\n
+요거티 신촌점 0507-1313-2852\n
+요거티 화곡점 0507-1390-0737\n
+요거티 용산점 (10월 중 오픈예정)\n
+'
+            android:textSize="14dp"
+            android:textColor="@color/dark_gray"
+            android:autoLink="phone"
+            android:fontFamily="@font/roboto_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yogurtii1"
+            tools:ignore="RtlCompat,TextSizeCheck" />
+        <TextView
+            android:id="@+id/yogurtii3"
+            android:theme="@style/link"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="20dp"
+            android:text='
+Instagram\n
+@yogurtii_offcial\n
+\n'
+            android:textSize="14dp"
+            android:textColor="@color/dark_gray"
+            android:autoLink="web"
+            android:fontFamily="@font/roboto_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yogurtii2"
+            tools:ignore="RtlCompat,TextSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

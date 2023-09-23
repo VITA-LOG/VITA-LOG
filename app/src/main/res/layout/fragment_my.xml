@@ -125,7 +125,7 @@
     <Button
         style="@style/TextButton"
         android:id="@+id/advertise"
-        android:text="광고문의"
+        android:text="스폰서"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/developer" />

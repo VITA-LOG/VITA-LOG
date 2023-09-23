@@ -6,4 +6,116 @@
     android:layout_height="match_parent"
     tools:context=".my.ContactActivity">
 
+    <TextView
+        android:id="@+id/quest1"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text='이메일 주소'
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/quest2"
+        android:theme="@style/link"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text='kyj950514@naver.com'
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quest1"
+        tools:ignore="RtlCompat,TextSizeCheck,TouchTargetSizeCheck" />
+    <TextView
+        android:id="@+id/quest3"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text='카카오톡 ID'
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quest2"
+        tools:ignore="RtlCompat,TextSizeCheck" />
+    <TextView
+        android:id="@+id/quest4"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text='kyj950514'
+        android:textSize="16dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quest3"
+        tools:ignore="RtlCompat,TextSizeCheck" />
+    <TextView
+        android:id="@+id/quest5"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text='대표자'
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quest4"
+        tools:ignore="RtlCompat,TextSizeCheck" />
+    <TextView
+        android:id="@+id/quest6"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text='김영진'
+        android:textSize="16dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quest5"
+        tools:ignore="RtlCompat,TextSizeCheck" />
+    <ImageView
+        android:id="@+id/question1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ask"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+    <TextView
+        android:id="@+id/quest7"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text='비타로그는 사용자의 목소리에 귀 기울이기 위해서 이메일 상담, 카카오톡 채팅상담을 진행하고 있습니다.\n
+\n
+영양제 누락, 잘못된 영양성분 정보, 자주묻는 질문에 존재하지 않는 정보 등의 문의는 주저하지 말고 이메일이나 카카오톡으로 문의하여 주시기 바랍니다.\n
+'
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question1"
+        tools:ignore="RtlCompat,TextSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

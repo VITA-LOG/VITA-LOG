@@ -48,5 +48,9 @@
         <item name="android:layout_height">50dp</item>
     </style>
 
+    <style name="link" parent="Widget.AppCompat.TextView">
+        <item name="android:colorAccent">@color/dark_gray</item>
+    </style>
+
     <style name="Theme.VITA_LOG" parent="Base.Theme.VITA_LOG" />
 </resources>
