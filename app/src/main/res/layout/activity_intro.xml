@@ -1,9 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".my.IntroActivity">
+    tools:context=".my.IntroActivity"
+    tools:ignore="SpeakableTextPresentCheck"
+    android:background="@color/purple_700">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/ic_main_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/vitalog1"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text='
+VITALOG는 Vitamin + V-log의 약자로, \n
+영양제 정보 및 관련 건강 관리 앱 서비스입니다.\n
+\n
+건강에 대한 인식과 이슈가 높아지는 요즘, \n
+건강 관리의 중요한 요소 중 하나가 바로 균형 잡힌 영양 섭취입니다.\n
+\n
+VITALOG는 영양제 및 영양 성분 컨텐츠를 통한 건강 관리 프로젝트를 진행하려고 합니다.\n
+\n
+VITALOG는 다양한 건강 관련 최신 뉴스 및 논문 콘텐츠를 제공하며, 사용자의 건강상태에 따른 맞춤형 건강 관리 서비스를 제공합니다.'
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textColor="@color/light_yellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            tools:ignore="RtlCompat,TextSizeCheck" />
+        <TextView
+            android:id="@+id/vitalog2"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text='
+All About Health Care \n
+&amp; Supplement
+\n'
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textColor="@color/light_yellow"
+            android:fontFamily="@font/lora"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vitalog1"
+            tools:ignore="RtlCompat,TextSizeCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

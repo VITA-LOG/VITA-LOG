@@ -106,7 +106,7 @@
         android:id="@+id/quest7"
         android:layout_width="410dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text='비타로그는 사용자의 목소리에 귀 기울이기 위해서 이메일 상담, 카카오톡 채팅상담을 진행하고 있습니다.\n

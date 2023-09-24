@@ -29,7 +29,7 @@
         android:layout_marginTop="5dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text='물론 없으시겠지만 혹시 후원을 해주시면 \n가난한 학식 생활에 큰 보탬이 될 것 같습니다.'
+        android:text='혹시나 만약 후원을 해주시면 \n가난한 학식 생활에 큰 보탬이 될 것 같습니다.\n 감사합니다.'
         android:textSize="12dp"
         android:textAlignment="center"
         android:fontFamily="@font/roboto_black"
