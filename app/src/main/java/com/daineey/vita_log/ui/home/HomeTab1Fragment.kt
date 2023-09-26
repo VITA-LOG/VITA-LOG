@@ -37,9 +37,6 @@ class HomeTab1Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?){
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<ImageButton>(R.id.gut_health).setOnClickListener{
-            findNavController().navigate(R.id.action_homeTab1Fragment_to_gutHealthFragment)
-        }
     }
 
     override fun onDestroyView() {

@@ -26,7 +26,6 @@
             android:layout_width="135dp"
             android:layout_height="48dp"
             android:layout_marginEnd="261dp"
-            android:background="@android:color/transparent"
             android:text="추천 키워드"
             android:fontFamily="@font/roboto_black"
             android:textColor="#000000"
@@ -41,34 +40,38 @@
             android:layout_height="80dp"
             android:layout_marginStart="16dp"
             android:background="?attr/selectableItemBackground"
-            android:contentDescription="Gut Health"
             android:src="@drawable/ic_gut_health"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/junlipsun"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="22dp"
             android:layout_marginEnd="19dp"
+            android:background="?attr/selectableItemBackground"
             android:src="@drawable/ic_junlipsun"
             app:layout_constraintEnd_toStartOf="@+id/daily_energy"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/gut_health"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/daily_energy"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="48dp"
             android:layout_marginEnd="17dp"
+            android:background="?attr/selectableItemBackground"
             android:src="@drawable/ic_daily_energy"
             app:layout_constraintEnd_toStartOf="@+id/sleep"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
             android:id="@+id/sleep"
@@ -76,41 +79,61 @@
             android:layout_height="80dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="48dp"
+            android:background="?attr/selectableItemBackground"
             android:src="@drawable/ic_sleep"
             app:layout_constraintStart_toEndOf="@+id/daily_energy"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/exercise_supplement"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="96dp"
+            android:background="?attr/selectableItemBackground"
             android:src="@drawable/ic_exercise_supplement"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/skin_care"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="22dp"
             android:layout_marginTop="96dp"
             android:layout_marginEnd="19dp"
+            android:background="?attr/selectableItemBackground"
             android:src="@drawable/ic_skin_care"
             app:layout_constraintEnd_toStartOf="@+id/daily_energy"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/exercise_supplement"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageView
-            android:id="@+id/etc"
+        <ImageButton
+            android:id="@+id/eyes"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/ic_etc"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_eyes_health"
             app:layout_constraintEnd_toStartOf="@+id/sleep"
             app:layout_constraintStart_toEndOf="@+id/skin_care"
-            app:layout_constraintTop_toTopOf="@+id/skin_care" />
+            app:layout_constraintTop_toTopOf="@+id/skin_care"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/liver"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_liver_health"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/eyes"
+            app:layout_constraintTop_toBottomOf="@+id/sleep"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textview2"
@@ -119,7 +142,6 @@
             android:layout_height="48dp"
             android:layout_marginTop="248dp"
             android:layout_marginEnd="261dp"
-            android:background="@android:color/transparent"
             android:text="영양제 조합 추천"
             android:fontFamily="@font/roboto_black"
             android:textColor="#000000"

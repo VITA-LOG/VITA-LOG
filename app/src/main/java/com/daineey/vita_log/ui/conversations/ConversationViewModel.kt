@@ -135,7 +135,6 @@ class ConversationViewModel @Inject constructor(
 
         val messagesMap: HashMap<String, MutableList<MessageModel>> =
             _messages.value.clone() as HashMap<String, MutableList<MessageModel>>
-
         return messagesMap[conversationId]!!
     }
 
@@ -212,7 +211,6 @@ class ConversationViewModel @Inject constructor(
             getMessagesByConversation(_currentConversation.value).toMutableList()
 
         currentListMessage[0] = currentListMessage[0].copy(answer = answer)
-
         setMessages(currentListMessage)
     }
 
