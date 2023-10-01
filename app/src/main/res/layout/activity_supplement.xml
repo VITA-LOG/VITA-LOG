@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SupplementActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/yogurtii"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vitalog1"
+        android:theme="@style/link"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:text='
+김영진\n
+@0_z_in\n
+https://github.com/YoungJeansKR'
+        android:textSize="18dp"
+        android:textColor="@color/dark_gray"
+        android:autoLink="web"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/yogurtii1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/vitalog2"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:text='
+홍다인\n
+@da_ineey\n
+https://github.com/daineey'
+        android:textSize="18dp"
+        android:textColor="@color/dark_gray"
+        android:theme="@style/link"
+        android:autoLink="web"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo1"
+        app:layout_constraintTop_toBottomOf="@+id/vitalog1"
+        tools:ignore="RtlCompat,TextSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
