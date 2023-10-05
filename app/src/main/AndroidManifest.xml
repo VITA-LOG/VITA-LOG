@@ -26,19 +26,25 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity> <!-- MainActivity -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:theme="@style/Theme.VITA_LOG"
+
             android:windowSoftInputMode="adjustResize" /> <!-- ChatActivity -->
+
         <activity
             android:name=".ChatActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:theme="@style/Theme.VITA_LOG"
+
             android:windowSoftInputMode="adjustResize" /> <!-- MyActivity -->
+
         <activity
             android:name=".my.QuestionActivity"
             android:exported="true"
@@ -99,6 +105,7 @@
             android:launchMode="singleTask"
             android:theme="@style/Theme.VITA_LOG"
             android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".SupplementActivity"
             android:exported="true"
@@ -107,5 +114,6 @@
             android:theme="@style/Theme.VITA_LOG"
             android:windowSoftInputMode="adjustResize" />
     </application>
+
 
 </manifest>

@@ -1,22 +1,28 @@
 package com.daineey.vita_log.ui.home
 
+
 import android.content.Intent
 import android.net.Uri
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.daineey.vita_log.R
+
 import com.daineey.vita_log.SupplementActivity
 import com.daineey.vita_log.databinding.FragmentHometab1Binding
 import com.daineey.vita_log.my.QuestionActivity
+
 
 class HomeTab1Fragment : Fragment() {
 
@@ -43,6 +49,7 @@ class HomeTab1Fragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?){
         super.onViewCreated(view, savedInstanceState)
+
 
         val button1 = view?.findViewById<ImageButton>(R.id.gut_health)
         button1?.setOnClickListener {
@@ -100,6 +107,7 @@ class HomeTab1Fragment : Fragment() {
                 startActivity(intent)
             }
         }
+
     }
 
     override fun onDestroyView() {
