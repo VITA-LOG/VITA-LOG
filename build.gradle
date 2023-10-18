@@ -2,7 +2,12 @@ buildscript {
     ext {
         compose_version = '1.2.0'
     }
+    repositories {
+        google()
+    }
     dependencies {
+        def nav_version = "2.5.1"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
         // Add the dependency for the Google services Gradle plugin
         classpath 'com.google.gms:google-services:4.3.15'
         // Other classpath declarations

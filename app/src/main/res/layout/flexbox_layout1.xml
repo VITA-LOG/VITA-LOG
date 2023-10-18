@@ -1,0 +1,97 @@
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flexboxLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:flexWrap="wrap"
+    app:justifyContent="flex_start">
+
+    <Button
+        android:id="@+id/intestine_button"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/elipse_keyword_button"
+        android:fontFamily="@font/roboto_black"
+        android:padding="0dp"
+        android:text="장 건강"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/prostate_button"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/elipse_keyword_button"
+        android:fontFamily="@font/roboto_black"
+        android:padding="0dp"
+        android:text="전립선"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/daily_button"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/elipse_keyword_button"
+        android:fontFamily="@font/roboto_black"
+        android:padding="0dp"
+        android:text="일상 활력"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/sleep_button"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/elipse_keyword_button"
+        android:fontFamily="@font/roboto_black"
+        android:padding="0dp"
+        android:text="수면"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/exercise_button"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/elipse_keyword_button"
+        android:fontFamily="@font/roboto_black"
+        android:padding="0dp"
+        android:text="운동 보조제"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/skin_button"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/elipse_keyword_button"
+        android:fontFamily="@font/roboto_black"
+        android:padding="0dp"
+        android:text="피부"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/liver_button"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/elipse_keyword_button"
+        android:fontFamily="@font/roboto_black"
+        android:padding="0dp"
+        android:text="간 건강"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/eye_button"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/elipse_keyword_button"
+        android:fontFamily="@font/roboto_black"
+        android:padding="0dp"
+        android:text="눈 건강"
+        android:textColor="#FFFFFF" />
+
+</com.google.android.flexbox.FlexboxLayout>

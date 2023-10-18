@@ -9,6 +9,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple">#7C49E5</color>
 
     <!-- 여기서부터 직접 추가한 색 -->
     <color name="yellow">#FFEB3B</color>

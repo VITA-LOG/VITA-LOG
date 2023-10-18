@@ -13,9 +13,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:enableOnBackInvokedCallback="true"
         android:theme="@style/Theme.VITA_LOG"
-        tools:targetApi="31">
-
+        tools:targetApi="tiramisu">
         <!-- SplashScreenActivity -->
         <activity
             android:name=".SplashScreenActivity"
@@ -23,28 +23,24 @@
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity> <!-- MainActivity -->
-
+        </activity>
+        <!-- MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:theme="@style/Theme.VITA_LOG"
-
-            android:windowSoftInputMode="adjustResize" /> <!-- ChatActivity -->
-
+            android:windowSoftInputMode="adjustResize" />
+        <!-- ChatActivity -->
         <activity
             android:name=".ChatActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:theme="@style/Theme.VITA_LOG"
-
-            android:windowSoftInputMode="adjustResize" /> <!-- MyActivity -->
-
+            android:windowSoftInputMode="adjustResize" />
+        <!-- MyActivity -->
         <activity
             android:name=".my.QuestionActivity"
             android:exported="true"
@@ -105,15 +101,6 @@
             android:launchMode="singleTask"
             android:theme="@style/Theme.VITA_LOG"
             android:windowSoftInputMode="adjustResize" />
-
-        <activity
-            android:name=".SupplementActivity"
-            android:exported="true"
-            android:launchMode="singleTask"
-            android:label="@string/title_activity_supplement"
-            android:theme="@style/Theme.VITA_LOG"
-            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.detail.SupplementDetail" />
     </application>
-
-
 </manifest>

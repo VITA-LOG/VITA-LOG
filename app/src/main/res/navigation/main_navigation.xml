@@ -1,0 +1,28 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.daineey.vita_log.ui.home.MainHomeFragment"
+        android:label="MAIN FRAGMENT"
+        tools:layout="@layout/fragment_mainhome">
+        <action
+            android:id="@+id/action_main_tab1"
+            app:destination="@id/keyword_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/keyword_fragment"
+        android:name="com.daineey.vita_log.ui.detail.KeywordFragment"
+        android:label="KEYWORD"
+        tools:layout="@layout/fragment_keyword">
+        <argument
+            android:name="supplementsData"
+            app:argType="com.daineey.vita_log.ui.detail.keywordRequiredData[]"
+            />
+    </fragment>
+
+</navigation>

@@ -11,6 +11,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-
-    <string name="title_activity_supplement">SupplementActivity</string>
+    <string name="plus_string">+</string>
+    <string name="my_health_keyword">내 건강키워드</string>
+    <string name="recommendation_supplements">영양제 조합 추천</string>
 </resources>

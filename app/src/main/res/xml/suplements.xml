@@ -20,6 +20,7 @@
             <content>36mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>60정</amount>
+            <tag>장 건강</tag>
         </supplement>
 
         <supplement>
@@ -42,6 +43,7 @@
             <content>160mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>50정</amount>
+            <tag>장 건강</tag>
         </supplement>
 
         <supplement>
@@ -59,6 +61,7 @@
             <content>175mg</content>
             <formulation>캡슐</formulation>
             <amount>150정</amount>
+            <tag>장 건강</tag>
         </supplement>
 
         <supplement>
@@ -73,6 +76,7 @@
             <content>134mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>60정</amount>
+            <tag>장 건강</tag>
         </supplement>
 
         <supplement>
@@ -87,6 +91,7 @@
             <content>155mg</content>
             <formulation>캡슐</formulation>
             <amount>60정</amount>
+            <tag>장 건강</tag>
         </supplement>
         <!-- 장 건강 End -->
 
@@ -106,6 +111,7 @@
             <content>126mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>90정</amount>
+            <tag>전립선</tag>
         </supplement>
 
         <supplement>
@@ -126,6 +132,7 @@
             <content>750mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>90정</amount>
+            <tag>전립선</tag>
         </supplement>
 
         <supplement>
@@ -139,6 +146,7 @@
             <content>320mg</content>
             <formulation>베지 소프트젤</formulation>
             <amount>90정</amount>
+            <tag>전립선</tag>
         </supplement>
 
         <supplement>
@@ -157,6 +165,7 @@
             <content>640mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>120정</amount>
+            <tag>전립선</tag>
         </supplement>
 
         <supplement>
@@ -172,6 +181,7 @@
             <content>378mg</content>
             <formulation>소프트젤</formulation>
             <amount>30정</amount>
+            <tag>전립선</tag>
         </supplement>
         <!-- 전립선 End -->
 
@@ -194,6 +204,7 @@
             <content>670mcg</content>
             <formulation>베지 캡슐</formulation>
             <amount>90정</amount>
+            <tag>일상 활력</tag>
         </supplement>
 
         <supplement>
@@ -207,6 +218,7 @@
             <content>680mcg</content>
             <formulation>베지 캡슐</formulation>
             <amount>60정</amount>
+            <tag>일상 활력</tag>
         </supplement>
 
         <supplement>
@@ -219,6 +231,7 @@
             <content>125mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>60정</amount>
+            <tag>일상 활력</tag>
         </supplement>
 
         <supplement>
@@ -231,6 +244,7 @@
             <content>500mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>100정</amount>
+            <tag>일상 활력</tag>
         </supplement>
 
         <supplement>
@@ -249,6 +263,7 @@
             <content>300mg</content>
             <formulation>캡슐</formulation>
             <amount>100정</amount>
+            <tag>일상 활력</tag>
         </supplement>
         <!-- 일상 활력 End -->
 
@@ -263,6 +278,7 @@
             <content>200mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>60정</amount>
+            <tag>수면</tag>
         </supplement>
 
         <supplement>
@@ -276,6 +292,7 @@
             <content>250mg</content>
             <formulation>캡슐</formulation>
             <amount>110정</amount>
+            <tag>수면</tag>
         </supplement>
 
         <supplement>
@@ -291,6 +308,7 @@
             <content>144mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>90정</amount>
+            <tag>수면</tag>
         </supplement>
 
         <supplement>
@@ -303,6 +321,7 @@
             <content>350mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>160정</amount>
+            <tag>수면</tag>
         </supplement>
 
         <supplement>
@@ -316,6 +335,7 @@
             <content>400mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>180정</amount>
+            <tag>수면</tag>
         </supplement>
         <!-- 수면 End -->
 
@@ -332,6 +352,7 @@
             <content>950mg</content>
             <formulation>베지 정제</formulation>
             <amount>30정</amount>
+            <tag>운동 보조제</tag>
         </supplement>
 
         <supplement>
@@ -350,6 +371,7 @@
             <content>540mg</content>
             <formulation>캡슐</formulation>
             <amount>120정</amount>
+            <tag>운동 보조제</tag>
         </supplement>
 
         <supplement>
@@ -362,6 +384,7 @@
             <content>900mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>180정</amount>
+            <tag>운동 보조제</tag>
         </supplement>
 
         <supplement>
@@ -374,6 +397,7 @@
             <content>1,000mg</content>
             <formulation>캡슐</formulation>
             <amount>180정</amount>
+            <tag>운동 보조제</tag>
         </supplement>
 
         <supplement>
@@ -387,6 +411,7 @@
             <content>725mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>100정</amount>
+            <tag>운동 보조제</tag>
         </supplement>
         <!-- 운동 보조제 End -->
 
@@ -401,6 +426,7 @@
             <content>5mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>120정</amount>
+            <tag>피부 보조제</tag>
         </supplement>
 
         <supplement>
@@ -413,6 +439,7 @@
             <content>10mg</content>
             <formulation>캡슐</formulation>
             <amount>120정</amount>
+            <tag>피부 보조제</tag>
         </supplement>
 
         <supplement>
@@ -426,6 +453,7 @@
             <content>350mg</content>
             <formulation>액상 베지 캡슐</formulation>
             <amount>30정</amount>
+            <tag>피부 보조제</tag>
         </supplement>
 
         <supplement>
@@ -439,6 +467,7 @@
             <content>6000mg</content>
             <formulation>캡슐</formulation>
             <amount>290정</amount>
+            <tag>피부 보조제</tag>
         </supplement>
 
         <supplement>
@@ -456,6 +485,7 @@
             <content>3000mg</content>
             <formulation>캡슐</formulation>
             <amount>180정</amount>
+            <tag>피부 보조제</tag>
         </supplement>
         <!-- 피부 보조제 End -->
 
@@ -470,6 +500,7 @@
             <content>12mg</content>
             <formulation>베지 소프트젤</formulation>
             <amount>120정</amount>
+            <tag>눈 건강</tag>
         </supplement>
 
         <supplement>
@@ -482,6 +513,7 @@
             <content>20mg</content>
             <formulation>소프트젤</formulation>
             <amount>180정</amount>
+            <tag>눈 건강</tag>
         </supplement>
 
         <supplement>
@@ -494,6 +526,7 @@
             <content>500mg</content>
             <formulation>소프트젤</formulation>
             <amount>90정</amount>
+            <tag>눈 건강</tag>
         </supplement>
 
         <supplement>
@@ -513,6 +546,7 @@
             <content>30mg</content>
             <formulation>캡슐</formulation>
             <amount>60정</amount>
+            <tag>눈 건강</tag>
         </supplement>
 
         <supplement>
@@ -529,6 +563,7 @@
             <content>173mg</content>
             <formulation>소프트젤</formulation>
             <amount>60정</amount>
+            <tag>눈 건강</tag>
         </supplement>
         <!-- 눈 건강 End -->
 
@@ -549,6 +584,7 @@
             <content>500mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>120정</amount>
+            <tag>간 건강</tag>
         </supplement>
 
         <supplement>
@@ -564,6 +600,7 @@
             <content>400mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>200정</amount>
+            <tag>간 건강</tag>
         </supplement>
 
         <supplement>
@@ -581,6 +618,7 @@
             <content>560mg</content>
             <formulation>베지 캡슐</formulation>
             <amount>60정</amount>
+            <tag>간 건강</tag>
         </supplement>
 
         <supplement>
@@ -596,6 +634,7 @@
             <content>450mg</content>
             <formulation>캡슐</formulation>
             <amount>60정</amount>
+            <tag>간 건강</tag>
         </supplement>
 
         <supplement>
@@ -614,6 +653,7 @@
             <content>525mg</content>
             <formulation>캡슐</formulation>
             <amount>60정</amount>
+            <tag>간 건강</tag>
         </supplement>
         <!-- 간 건강 End -->
     </supplements>

@@ -5,164 +5,55 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeTab1Fragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="417dp"
-            android:layout_height="385dp"
-            android:layout_weight="0"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_purple"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_purple" />
 
+        <!-- 임의적으로 5dp padding 값을 줌  -->
         <TextView
             android:id="@+id/textView"
             style="@style/MyButtonStyle2"
-            android:layout_width="135dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="261dp"
-            android:text="추천 키워드"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
             android:fontFamily="@font/roboto_black"
-            android:textColor="#000000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            android:text="@string/my_health_keyword"
+            android:textColor="@color/black" />
 
-        <ImageButton
-            android:id="@+id/gut_health"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="16dp"
-            android:background="?attr/selectableItemBackground"
-            android:src="@drawable/ic_gut_health"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:ignore="SpeakableTextPresentCheck" />
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flexboxLayout"
+            layout="@layout/flexbox_layout1" />
 
-        <ImageButton
-            android:id="@+id/junlipsun"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="22dp"
-            android:layout_marginEnd="19dp"
-            android:background="?attr/selectableItemBackground"
-            android:src="@drawable/ic_junlipsun"
-            app:layout_constraintEnd_toStartOf="@+id/daily_energy"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/gut_health"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/daily_energy"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="17dp"
-            android:background="?attr/selectableItemBackground"
-            android:src="@drawable/ic_daily_energy"
-            app:layout_constraintEnd_toStartOf="@+id/sleep"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-
-        <ImageButton
-            android:id="@+id/sleep"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="48dp"
-            android:background="?attr/selectableItemBackground"
-            android:src="@drawable/ic_sleep"
-            app:layout_constraintStart_toEndOf="@+id/daily_energy"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/exercise_supplement"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="96dp"
-            android:background="?attr/selectableItemBackground"
-            android:src="@drawable/ic_exercise_supplement"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/skin_care"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="22dp"
-            android:layout_marginTop="96dp"
-            android:layout_marginEnd="19dp"
-            android:background="?attr/selectableItemBackground"
-            android:src="@drawable/ic_skin_care"
-            app:layout_constraintEnd_toStartOf="@+id/daily_energy"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/exercise_supplement"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/eyes"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="?attr/selectableItemBackground"
-            android:src="@drawable/ic_eyes_health"
-            app:layout_constraintEnd_toStartOf="@+id/sleep"
-            app:layout_constraintStart_toEndOf="@+id/skin_care"
-            app:layout_constraintTop_toTopOf="@+id/skin_care"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/liver"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="16dp"
-            android:background="?attr/selectableItemBackground"
-            android:src="@drawable/ic_liver_health"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/eyes"
-            app:layout_constraintTop_toBottomOf="@+id/sleep"
-            tools:ignore="SpeakableTextPresentCheck" />
-
+        <!-- 임의적으로 5dp padding 값을 줌  -->
         <TextView
             android:id="@+id/textview2"
             style="@style/MyButtonStyle2"
-            android:layout_width="180dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="248dp"
-            android:layout_marginEnd="261dp"
-            android:text="영양제 조합 추천"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
             android:fontFamily="@font/roboto_black"
-            android:textColor="#000000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            android:text="@string/recommendation_supplements"
+            android:textColor="@color/black" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="355dp"
-            android:layout_height="283dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginEnd="28dp"
-            android:layout_weight="0"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textview2"
-            app:srcCompat="@drawable/ic_cards" />
+        <!--  include 로 변경!  -->
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/recommendation_supplements"
+            android:layout_marginBottom="20dp"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </androidx.core.widget.NestedScrollView>
