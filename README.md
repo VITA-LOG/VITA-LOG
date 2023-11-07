@@ -4,7 +4,7 @@
 
 * [YoungJeansKR](https://github.com/youngjeanskr "김영진")
 * [daineey](https://github.com/daineey "홍다인")
-
+D
 ## Language / IDE
 
 * <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=Kotlin&logoColor=white"/>
