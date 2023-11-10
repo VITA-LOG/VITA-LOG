@@ -25,31 +25,6 @@
         app:flexWrap="nowrap"
         app:justifyContent="space_evenly">
 
-<<<<<<< HEAD
-        <ImageView
-            android:layout_width="51dp"
-            android:layout_height="51dp"
-            app:srcCompat="@drawable/prostate_four" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Doctor's Best"
-                android:textColor="@android:color/black"
-                android:textSize="8sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="소화 효소, 베지 캡슐 90정"
-                android:textColor="@android:color/black"
-                android:textSize="12sp" />
-=======
         <LinearLayout
             android:id="@+id/item1"
             android:layout_width="match_parent"
@@ -65,61 +40,16 @@
                 android:layout_height="51dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/intestine_one" />
->>>>>>> ec56cb6 (update 0.22)
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:gravity="center">
-=======
                 android:layout_gravity="center"
                 android:orientation="vertical">
->>>>>>> ec56cb6 (update 0.22)
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
-                    android:layout_marginRight="8dp"
-                    android:text="4.3"
-                    android:textColor="@color/purple"
-                    android:textSize="10sp" />
-
-                <RatingBar
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:progressTint="@color/purple"
-                    android:rating="4.3" />
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="51dp"
-            android:layout_height="51dp"
-            app:srcCompat="@drawable/intestine_one" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="California Gold Nutrition"
-                android:textColor="@android:color/black"
-                android:textSize="8sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="LactoBif 프로바이오틱스,\n베지 캡슐 60정"
-                android:textColor="@android:color/black"
-                android:textSize="12sp" />
-=======
                     android:text="California Gold Nutrition"
                     android:textColor="@android:color/black"
                     android:textSize="8sp" />
@@ -170,37 +100,16 @@
                 android:layout_height="51dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/intestine_three" />
->>>>>>> ec56cb6 (update 0.22)
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:gravity="center">
-=======
                 android:layout_gravity="center"
                 android:orientation="vertical">
->>>>>>> ec56cb6 (update 0.22)
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
-                    android:layout_marginRight="8dp"
-                    android:text="4"
-                    android:textColor="@color/purple"
-                    android:textSize="10sp" />
-
-                <RatingBar
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:progressTint="@color/purple"
-                    android:rating="4" />
-
-            </LinearLayout>
-
-=======
                     android:text="21st Century"
                     android:textColor="@android:color/black"
                     android:textSize="8sp" />
@@ -235,7 +144,6 @@
                 </LinearLayout>
 
             </LinearLayout>
->>>>>>> ec56cb6 (update 0.22)
         </LinearLayout>
 
     </com.google.android.flexbox.FlexboxLayout>
@@ -246,19 +154,12 @@
         android:layout_marginBottom="10dp"
         android:background="@color/purple"
         android:fontFamily="@font/roboto_black"
-<<<<<<< HEAD
-        android:text="가성비 최강 프로바이오틱스"
-=======
         android:text="운동과 건강을 다 잡는 방법"
->>>>>>> ec56cb6 (update 0.22)
         android:textAlignment="center"
         android:textColor="@color/white" />
 
     <!--  [Item Box Include]  -->
-<<<<<<< HEAD
-=======
 
->>>>>>> ec56cb6 (update 0.22)
     <com.google.android.flexbox.FlexboxLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -267,31 +168,6 @@
         app:flexWrap="nowrap"
         app:justifyContent="space_evenly">
 
-<<<<<<< HEAD
-        <ImageView
-            android:layout_width="51dp"
-            android:layout_height="51dp"
-            app:srcCompat="@drawable/prostate_four" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Doctor's Best"
-                android:textColor="@android:color/black"
-                android:textSize="8sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="소화 효소, 베지 캡슐 90정"
-                android:textColor="@android:color/black"
-                android:textSize="12sp" />
-=======
         <LinearLayout
             android:id="@+id/item3"
             android:layout_width="match_parent"
@@ -307,67 +183,16 @@
                 android:layout_height="51dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/exercise_one" />
->>>>>>> ec56cb6 (update 0.22)
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:gravity="center">
-=======
                 android:layout_gravity="center"
                 android:orientation="vertical">
->>>>>>> ec56cb6 (update 0.22)
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
-                    android:layout_marginRight="8dp"
-                    android:text="4"
-                    android:textColor="@color/purple"
-                    android:textSize="10sp" />
-
-                <RatingBar
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:progressTint="@color/purple"
-                    android:rating="4" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="51dp"
-            android:layout_height="51dp"
-            app:srcCompat="@drawable/intestine_one" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="California Gold Nutrition"
-                android:textColor="@android:color/black"
-                android:textSize="8sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="LactoBif 프로바이오틱스,\n베지 캡슐 60정"
-                android:textColor="@android:color/black"
-                android:textSize="12sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center">
-=======
                     android:text="Life Extension"
                     android:textColor="@android:color/black"
                     android:textSize="8sp" />
@@ -425,27 +250,10 @@
                 android:layout_gravity="center"
                 android:orientation="vertical"
                 android:tag="item4">
->>>>>>> ec56cb6 (update 0.22)
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
-                    android:layout_marginRight="8dp"
-                    android:text="4"
-                    android:textColor="@color/purple"
-                    android:textSize="10sp" />
-
-                <RatingBar
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:progressTint="@color/purple"
-                    android:rating="4" />
-
-            </LinearLayout>
-
-=======
                     android:text="Force Factor"
                     android:textColor="@android:color/black"
                     android:textSize="8sp" />
@@ -479,7 +287,6 @@
 
                 </LinearLayout>
             </LinearLayout>
->>>>>>> ec56cb6 (update 0.22)
         </LinearLayout>
 
     </com.google.android.flexbox.FlexboxLayout>
@@ -495,10 +302,6 @@
         android:textColor="@color/white" />
 
     <!--  [Item Box Include]  -->
-<<<<<<< HEAD
-    <!--  [Item Box Include]  -->
-=======
->>>>>>> ec56cb6 (update 0.22)
     <com.google.android.flexbox.FlexboxLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -506,31 +309,6 @@
         app:flexWrap="nowrap"
         app:justifyContent="space_evenly">
 
-<<<<<<< HEAD
-        <ImageView
-            android:layout_width="51dp"
-            android:layout_height="51dp"
-            app:srcCompat="@drawable/prostate_four" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Doctor's Best"
-                android:textColor="@android:color/black"
-                android:textSize="8sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="소화 효소, 베지 캡슐 90정"
-                android:textColor="@android:color/black"
-                android:textSize="12sp" />
-=======
         <LinearLayout
             android:id="@+id/item5"
             android:layout_width="match_parent"
@@ -546,62 +324,16 @@
                 android:layout_height="51dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/daily_two" />
->>>>>>> ec56cb6 (update 0.22)
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:gravity="center">
-=======
                 android:layout_gravity="center"
                 android:orientation="vertical">
->>>>>>> ec56cb6 (update 0.22)
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
-                    android:layout_marginRight="8dp"
-                    android:text="4"
-                    android:textColor="@color/purple"
-                    android:textSize="10sp" />
-
-                <RatingBar
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:progressTint="@color/purple"
-                    android:rating="4" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="51dp"
-            android:layout_height="51dp"
-            app:srcCompat="@drawable/intestine_one" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="California Gold Nutrition"
-                android:textColor="@android:color/black"
-                android:textSize="8sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="LactoBif 프로바이오틱스,\n베지 캡슐 60정"
-                android:textColor="@android:color/black"
-                android:textSize="12sp" />
-=======
                     android:text="Jarrow Formulas"
                     android:textColor="@android:color/black"
                     android:textSize="8sp" />
@@ -652,37 +384,16 @@
                 android:layout_height="51dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/daily_one" />
->>>>>>> ec56cb6 (update 0.22)
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:gravity="center">
-=======
                 android:layout_gravity="center"
                 android:orientation="vertical">
->>>>>>> ec56cb6 (update 0.22)
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-<<<<<<< HEAD
-                    android:layout_marginRight="8dp"
-                    android:text="4"
-                    android:textColor="@color/purple"
-                    android:textSize="10sp" />
-
-                <RatingBar
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:progressTint="@color/purple"
-                    android:rating="4" />
-
-            </LinearLayout>
-
-=======
                     android:text="Lake Avenue Nutrition"
                     android:textColor="@android:color/black"
                     android:textSize="8sp" />
@@ -716,7 +427,6 @@
 
                 </LinearLayout>
             </LinearLayout>
->>>>>>> ec56cb6 (update 0.22)
         </LinearLayout>
 
     </com.google.android.flexbox.FlexboxLayout>

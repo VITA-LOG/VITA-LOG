@@ -5,44 +5,11 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-<<<<<<< HEAD
-    <!-- 뒤로가기 버튼 src 제거됨 -->
-    <ImageButton
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/baseline_arrow_back_24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Home 아이콘 -->
-    <ImageButton
-        android:id="@+id/homeIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/baseline_home_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-=======
->>>>>>> ec56cb6 (update 0.22)
     <!-- 영양제 이미지 -->
     <ImageView
         android:id="@+id/supplementImage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/backButton" />
-
-    <!-- 회사 이름 -->
-    <TextView
-        android:id="@+id/companyName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Company Name"
-=======
         android:src="@drawable/intestine_three"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,59 +24,10 @@
         android:text="영양제 이름"
         android:textColor="@android:color/black"
         android:textSize="25sp"
->>>>>>> ec56cb6 (update 0.22)
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/supplementImage" />
 
-<<<<<<< HEAD
-    <!-- 영양제 이름 -->
-    <TextView
-        android:id="@+id/supplementName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Supplement Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/companyName" />
-
-    <!-- 부가정보 (ingredient, content, formulation, amount) -->
-    <LinearLayout
-        android:id="@+id/detailInfo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/supplementName">
-
-        <TextView
-            android:id="@+id/ingredient"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ingredient" />
-
-        <TextView
-            android:id="@+id/content"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Content" />
-
-        <TextView
-            android:id="@+id/formulation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Formulation" />
-
-        <TextView
-            android:id="@+id/amount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Amount" />
-
-    </LinearLayout>
-
-=======
     <!-- LinearLayout for 제조회사 이름 -->
     <LinearLayout
         android:id="@+id/companyBox"
@@ -254,5 +172,4 @@
             android:text="Ingredient (DB)"
             android:textColor="@android:color/black" />
     </LinearLayout>
->>>>>>> ec56cb6 (update 0.22)
 </androidx.constraintlayout.widget.ConstraintLayout>

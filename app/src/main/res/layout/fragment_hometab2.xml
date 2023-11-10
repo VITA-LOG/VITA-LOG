@@ -9,76 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-<<<<<<< HEAD
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="417dp"
-            android:layout_height="385dp"
-            android:layout_weight="0"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_yellow"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView"
-            style="@style/MyButtonStyle2"
-            android:layout_width="150dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="261dp"
-            android:background="@android:color/transparent"
-            android:text="인기 영양제"
-            android:textColor="#000000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-        <ImageView
-            android:id="@+id/sleep_improvement"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="16dp"
-            android:src="@drawable/ic_sleep_improvement"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-        <ImageView
-            android:id="@+id/daily_vitality"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/ic_daily_vitality"
-            app:layout_constraintEnd_toStartOf="@+id/stomach_health"
-            app:layout_constraintStart_toEndOf="@+id/sleep_improvement"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-        <ImageView
-            android:id="@+id/stomach_health"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="19dp"
-            android:src="@drawable/ic_stomach_health"
-            app:layout_constraintEnd_toStartOf="@+id/gut_health_white"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-        <ImageView
-            android:id="@+id/gut_health_white"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/ic_gut_health_white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.core.widget.NestedScrollView>
-=======
         <TextView
             android:id="@+id/textView"
             style="@style/MyButtonStyle2"
@@ -118,4 +48,3 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>
->>>>>>> ec56cb6 (update 0.22)

@@ -1,16 +1,11 @@
 package com.daineey.vita_log.database
 
-<<<<<<< HEAD
-import android.database.Cursor
-import android.util.Log
-=======
 import android.content.SharedPreferences
 import android.database.Cursor
 import android.util.Log
 import com.google.common.reflect.TypeToken
 import com.google.gson.Gson
 import java.util.Random
->>>>>>> ec56cb6 (update 0.22)
 
 class DatabaseCRUD(private val dbHelper: DatabaseHelper) {
     // SELECT
@@ -117,12 +112,8 @@ class DatabaseCRUD(private val dbHelper: DatabaseHelper) {
 
     fun getSupplementByName(supplementName: String?): Supplement? {
         val db = dbHelper.readableDatabase
-<<<<<<< HEAD
-        val cursor = db.rawQuery("SELECT * FROM SUPPLEMENTS WHERE name = ?", arrayOf(supplementName))
-=======
         val cursor =
             db.rawQuery("SELECT * FROM SUPPLEMENTS WHERE name = ?", arrayOf(supplementName))
->>>>>>> ec56cb6 (update 0.22)
 
         if (cursor.moveToFirst()) {
             val idIndex = cursor.getColumnIndex("id")
@@ -152,8 +143,6 @@ class DatabaseCRUD(private val dbHelper: DatabaseHelper) {
         cursor.close()
         return null
     }
-<<<<<<< HEAD
-=======
 
     fun getRandomLank(sharedPreferences: SharedPreferences, count: Int): List<Supplement> {
         val db = dbHelper.readableDatabase
@@ -221,5 +210,4 @@ class DatabaseCRUD(private val dbHelper: DatabaseHelper) {
         return shuffledSupplements
     }
 
->>>>>>> ec56cb6 (update 0.22)
 }

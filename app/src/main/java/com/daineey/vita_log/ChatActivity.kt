@@ -3,14 +3,10 @@ package com.daineey.vita_log
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-<<<<<<< HEAD
-import androidx.activity.ComponentActivity
-=======
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.addCallback
->>>>>>> ec56cb6 (update 0.22)
 import androidx.activity.compose.BackHandler
 import androidx.activity.viewModels
 import androidx.compose.foundation.layout.*
@@ -62,17 +58,6 @@ class ChatActivity : ComponentActivity() {
                     val scope = rememberCoroutineScope()
                     val focusManager = LocalFocusManager.current
 
-<<<<<<< HEAD
-                    BackHandler {
-                        if (drawerState.isOpen) {
-                            scope.launch {
-                                drawerState.close()
-                            }
-                        } else {
-                            focusManager.clearFocus()
-                        }
-                    }
-=======
 //                    BackHandler {
 //                        if (drawerState.isOpen) {
 //                            scope.launch {
@@ -82,7 +67,6 @@ class ChatActivity : ComponentActivity() {
 //                            focusManager.clearFocus()
 //                        }
 //                    }
->>>>>>> ec56cb6 (update 0.22)
                     val darkTheme = remember(key1 = "darkTheme") {
                         mutableStateOf(true)
                     }
@@ -124,13 +108,6 @@ class ChatActivity : ComponentActivity() {
                 }
             }
         )
-<<<<<<< HEAD
-    }
-
-    override fun onBackPressed() {
-        startActivity(Intent(this, MainActivity::class.java))
-        finish()
-=======
 
         val callback = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
@@ -141,7 +118,6 @@ class ChatActivity : ComponentActivity() {
         }
 
         onBackPressedDispatcher.addCallback(this, callback)
->>>>>>> ec56cb6 (update 0.22)
     }
 }
 

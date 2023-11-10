@@ -1,16 +1,5 @@
 package com.daineey.vita_log.ui.home
 
-<<<<<<< HEAD
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.daineey.vita_log.R
-import com.daineey.vita_log.databinding.FragmentHometab2Binding
-=======
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -29,18 +18,10 @@ import com.daineey.vita_log.databinding.FragmentHometab2Binding
 import com.daineey.vita_log.ui.detail.SupplementAdapter
 import com.google.common.reflect.TypeToken
 import com.google.gson.Gson
->>>>>>> ec56cb6 (update 0.22)
 
 class HomeTab2Fragment : Fragment() {
 
     private var _binding: FragmentHometab2Binding? = null
-<<<<<<< HEAD
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
-=======
     private val binding get() = _binding!!
 
     private lateinit var recyclerView: RecyclerView
@@ -63,25 +44,11 @@ class HomeTab2Fragment : Fragment() {
         )
     }
 
->>>>>>> ec56cb6 (update 0.22)
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-<<<<<<< HEAD
-        val HomeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
-
-        _binding = FragmentHometab2Binding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-//        val textView: TextView = binding.textHome
-//        HomeViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
-        return root
-=======
         _binding = FragmentHometab2Binding.inflate(inflater, container, false)
         val view = binding.root
 
@@ -129,7 +96,6 @@ class HomeTab2Fragment : Fragment() {
         Log.i("updateListViewMethod", displayedSupplements.toString())
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = SupplementAdapter(requireContext(), displayedSupplements)
->>>>>>> ec56cb6 (update 0.22)
     }
 
     override fun onDestroyView() {

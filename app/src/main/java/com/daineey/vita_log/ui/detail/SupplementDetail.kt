@@ -10,13 +10,10 @@ import com.daineey.vita_log.database.DatabaseCRUD
 import com.daineey.vita_log.database.DatabaseHelper
 import com.daineey.vita_log.database.DatabaseHelper.Companion.DATABASE_NAME
 import com.daineey.vita_log.databinding.FragmentSupplementBinding
-<<<<<<< HEAD
-=======
 import kotlinx.android.synthetic.main.fragment_supplement.view.supplementAmount
 import kotlinx.android.synthetic.main.fragment_supplement.view.supplementContent
 import kotlinx.android.synthetic.main.fragment_supplement.view.supplementFormulation
 import kotlinx.android.synthetic.main.fragment_supplement.view.supplementIngredient
->>>>>>> ec56cb6 (update 0.22)
 
 class SupplementDetail : Fragment() {
 
@@ -48,17 +45,10 @@ class SupplementDetail : Fragment() {
         }
         binding.companyName.text = supplement?.company
         binding.supplementName.text = supplement?.name
-<<<<<<< HEAD
-        binding.ingredient.text = supplement?.ingredient
-        binding.content.text = supplement?.content
-        binding.formulation.text = supplement?.formulation
-        binding.amount.text = supplement?.amount.toString()
-=======
         binding.ingredientBox.supplementIngredient.text = supplement?.ingredient
         binding.contentBox.supplementContent.text = supplement?.content
         binding.formulationBox.supplementFormulation.text = supplement?.formulation
         binding.amountBox.supplementAmount.text = supplement?.amount.toString()
->>>>>>> ec56cb6 (update 0.22)
 
         return binding.root
     }
