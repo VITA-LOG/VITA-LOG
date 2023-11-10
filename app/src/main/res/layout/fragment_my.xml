@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+<<<<<<< HEAD
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -26,6 +27,25 @@
             android:src="@drawable/ic_logo" />
 
     </androidx.appcompat.widget.Toolbar>
+=======
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:background="#FFFFFFFF"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/logo_image"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/ic_logo" />-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+>>>>>>> ec56cb6 (update 0.22)
 
     <TextView
         android:id="@+id/customer"

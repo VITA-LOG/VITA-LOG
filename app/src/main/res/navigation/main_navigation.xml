@@ -2,6 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
+<<<<<<< HEAD
     app:startDestination="@id/mainFragment">
 
     <fragment
@@ -9,6 +10,25 @@
         android:name="com.daineey.vita_log.ui.home.MainHomeFragment"
         android:label="MAIN FRAGMENT"
         tools:layout="@layout/fragment_mainhome">
+=======
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.daineey.vita_log.ui.home.MainHomeFragment"
+        android:label="HOME"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_main_tab1"
+            app:destination="@id/keyword_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myFragment"
+        android:name="com.daineey.vita_log.ui.my.MyFragment"
+        android:label="MY"
+        tools:layout="@layout/fragment_my">
+>>>>>>> ec56cb6 (update 0.22)
         <action
             android:id="@+id/action_main_tab1"
             app:destination="@id/keyword_fragment" />
@@ -21,8 +41,12 @@
         tools:layout="@layout/fragment_keyword">
         <argument
             android:name="supplementsData"
+<<<<<<< HEAD
             app:argType="com.daineey.vita_log.ui.detail.keywordRequiredData[]"
             />
+=======
+            app:argType="com.daineey.vita_log.ui.detail.keywordRequiredData[]" />
+>>>>>>> ec56cb6 (update 0.22)
     </fragment>
 
 </navigation>

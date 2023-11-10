@@ -1,7 +1,16 @@
 package com.daineey.vita_log.database
 
+<<<<<<< HEAD
 import android.database.Cursor
 import android.util.Log
+=======
+import android.content.SharedPreferences
+import android.database.Cursor
+import android.util.Log
+import com.google.common.reflect.TypeToken
+import com.google.gson.Gson
+import java.util.Random
+>>>>>>> ec56cb6 (update 0.22)
 
 class DatabaseCRUD(private val dbHelper: DatabaseHelper) {
     // SELECT
@@ -108,7 +117,12 @@ class DatabaseCRUD(private val dbHelper: DatabaseHelper) {
 
     fun getSupplementByName(supplementName: String?): Supplement? {
         val db = dbHelper.readableDatabase
+<<<<<<< HEAD
         val cursor = db.rawQuery("SELECT * FROM SUPPLEMENTS WHERE name = ?", arrayOf(supplementName))
+=======
+        val cursor =
+            db.rawQuery("SELECT * FROM SUPPLEMENTS WHERE name = ?", arrayOf(supplementName))
+>>>>>>> ec56cb6 (update 0.22)
 
         if (cursor.moveToFirst()) {
             val idIndex = cursor.getColumnIndex("id")
@@ -138,4 +152,74 @@ class DatabaseCRUD(private val dbHelper: DatabaseHelper) {
         cursor.close()
         return null
     }
+<<<<<<< HEAD
+=======
+
+    fun getRandomLank(sharedPreferences: SharedPreferences, count: Int): List<Supplement> {
+        val db = dbHelper.readableDatabase
+        val gson = Gson()
+        val key = "randomList_$count"
+        val randomListJson = sharedPreferences.getString(key, null)
+        val seed = sharedPreferences.getLong("randomSeed", -1L)
+
+        // SharedPreferences에서 저장된 리스트와 시드를 불러옴
+        if (!randomListJson.isNullOrEmpty() && seed != -1L) {
+            val type = object : TypeToken<List<Supplement>>() {}.type
+            return gson.fromJson(randomListJson, type)
+        }
+
+        // 처음이라면 시드를 생성하고 저장
+        val newSeed = seed.takeIf { it != -1L } ?: System.currentTimeMillis()
+        with(sharedPreferences.edit()) {
+            putLong("randomSeed", newSeed)
+            apply()
+        }
+
+        // 데이터베이스에서 모든 영양제를 불러옴
+        val supplements = mutableListOf<Supplement>()
+        val cursor = db.rawQuery("SELECT * FROM SUPPLEMENTS", null)
+
+        if (cursor.moveToFirst()) {
+            do {
+                val idIndex = cursor.getColumnIndex("id")
+                val imageNameIndex = cursor.getColumnIndex("imageName")
+                val nameIndex = cursor.getColumnIndex("name")
+                val companyIndex = cursor.getColumnIndex("company")
+                val ingredientIndex = cursor.getColumnIndex("ingredient")
+                val contentIndex = cursor.getColumnIndex("content")
+                val formulationIndex = cursor.getColumnIndex("formulation")
+                val amountIndex = cursor.getColumnIndex("amount")
+
+                val supplement = Supplement(
+                    cursor.getInt(idIndex),
+                    cursor.getString(imageNameIndex),
+                    cursor.getString(nameIndex),
+                    cursor.getString(companyIndex),
+                    cursor.getString(ingredientIndex),
+                    cursor.getString(contentIndex),
+                    cursor.getString(formulationIndex),
+                    cursor.getString(amountIndex)
+                )
+                supplements.add(supplement)
+            } while (cursor.moveToNext())
+        }
+
+        cursor.close()
+        db.close()
+
+        // 동일한 시드를 사용하여 리스트를 섞음
+        val random = Random(newSeed)
+        val shuffledSupplements = supplements.shuffled(random).take(count)
+
+        // 섞인 리스트를 SharedPreferences에 저장
+        with(sharedPreferences.edit()) {
+            val json = gson.toJson(shuffledSupplements)
+            putString(key, json)
+            apply()
+        }
+
+        return shuffledSupplements
+    }
+
+>>>>>>> ec56cb6 (update 0.22)
 }

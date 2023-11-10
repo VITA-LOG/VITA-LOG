@@ -7,14 +7,14 @@
             <name>LactoBif 5 Probiotics</name>
             <company>California Gold Nutrition</company>
             <ingredient>
-                프로바이오틱 박테리아 혼합물,
-                락토바실러스애시도필러스(La-14),
-                비피도박테리움락티스(Bl-04),
-                락토바실러스람노서스(Lr-32),
-                락토바실러스플란타럼(Lp-115),
-                비피도박테리움롱검(Bl-05),
-                비피도박테리움브레브(Bb-03),
-                락토바실러스카제이(Lc-11),
+                프로바이오틱 박테리아 혼합물
+                락토바실러스애시도필러스(La-14)
+                비피도박테리움락티스(Bl-04)
+                락토바실러스람노서스(Lr-32)
+                락토바실러스플란타럼(Lp-115)
+                비피도박테리움롱검(Bl-05)
+                비피도박테리움브레브(Bb-03)
+                락토바실러스카제이(Lc-11)
                 락토바실러스살리바리우스(Ls-33)
             </ingredient>
             <content>36mg</content>
@@ -28,16 +28,16 @@
             <name>Probiotic-10, 250억</name>
             <company>NOW Foods</company>
             <ingredient>
-                프로바이오틱 박테리아 균주혼합물,
-                락토바실러스 애시도필러스(La-14),
-                비피도박테리움 락티스(Bl-04),
-                락토바실러스 플란타럼(Lp-115),
-                락토바실러스 카제이(Lc-11),
-                락토바실러스 람노서스(Lr 32),
-                락토바실러스 파라카제이(Lpc-37),
-                비피도박테리움 브레브(Bb-03),
-                스트렙토코커스 써모필러스(St-21),
-                락토바실러스 살리바리우스(Ls-33),
+                프로바이오틱 박테리아 균주혼합물
+                락토바실러스 애시도필러스(La-14)
+                비피도박테리움 락티스(Bl-04)
+                락토바실러스 플란타럼(Lp-115)
+                락토바실러스 카제이(Lc-11)
+                락토바실러스 람노서스(Lr 32)
+                락토바실러스 파라카제이(Lpc-37)
+                비피도박테리움 브레브(Bb-03)
+                스트렙토코커스 써모필러스(St-21)
+                락토바실러스 살리바리우스(Ls-33)
                 비피도박테리움 롱검(Bl-05)
             </ingredient>
             <content>160mg</content>
@@ -120,13 +120,13 @@
             <company>ZOI Research</company>
             <ingredient>
                 고유 전립선 건강 지원 혼합물
-                소팔메토 베리 분말(Serenoa repens),
-                쐐기풀 뿌리추출물(Urtica dioica),
-                식물성 스테롤(피토스테롤 95%),
-                대두 추출물, 대두 단백질,
-                녹차잎추출물(Camellia sinensis)(디카페인),
-                석류 열매추출물(Punica granatum),
-                라이코펜(토마토 열매추출물),
+                소팔메토 베리 분말(Serenoa repens)
+                쐐기풀 뿌리추출물(Urtica dioica)
+                식물성 스테롤(피토스테롤 95%)
+                대두 추출물, 대두 단백질
+                녹차잎추출물(Camellia sinensis)(디카페인)
+                석류 열매추출물(Punica granatum)
+                라이코펜(토마토 열매추출물)
                 토마토열매분말(Solanum lycopersicum)
             </ingredient>
             <content>750mg</content>
@@ -174,8 +174,8 @@
             <company>Life Extension</company>
             <ingredient>
                 Graminex Flower Pollen Extract(귀리 추출물)
-                트리플 스트렝스 농축 혼합물로서
-                Graminex G60(수용성 분획물),
+                트리플 스트렝스 농축 혼합물
+                Graminex G60(수용성 분획물)
                 Graminex NAX(지용성 분획물)
             </ingredient>
             <content>378mg</content>
@@ -195,7 +195,7 @@
                 리보플라빈(리보플라빈-5-포스페이트)
                 니아신(니코틴산 및 나이아신아마이드)
                 비타민B6(피리독신HCL 및 피리독살-5-포스페이트)
-                엽산((6S)-5-메틸테트라히드로엽산, 글루코사민염)
+                엽산((6S)-5-메틸테트라히드로엽산 글루코사민염)
                 비타민B12(메틸코발라민)
                 비오틴(d-비오틴)
                 판토텐산(d-판토텐산칼슘)
@@ -253,7 +253,7 @@
             <company>NOW Foods</company>
             <ingredient>
                 비타민C(아스코르브산)
-                티아민(티아민 모노나이트레이트, B-1)
+                티아민(티아민 모노나이트레이트\n B-1)
                 리보플라빈(비타민B-2)
                 니아신(나이아신아마이드)
                 비타민B-6(피리독신하이드로클로라이드)
@@ -298,7 +298,7 @@
         <supplement>
             <image>sleep_three.jpg</image>
             <name>
-                Neuro-Mag,
+                Neuro-Mag
                 Magnesium L-Threonate
             </name>
             <company>Life Extensionn</company>
@@ -329,7 +329,7 @@
             <name>Magnesium Caps</name>
             <company>NOW Foods</company>
             <ingredient>
-                마그네슘(산화 마그네슘, 구연산마그네슘,
+                마그네슘(산화 마그네슘, 구연산마그네슘
                 아스파르트산마그네슘에서 추출)
             </ingredient>
             <content>400mg</content>
@@ -357,15 +357,15 @@
 
         <supplement>
             <image>exercise_two.jpg</image>
-            <name>ProbioSlim, Weight Loss Essentials</name>
+            <name>ProbioSlim Weight Loss Essentials</name>
             <company>Force Factor</company>
             <ingredient>
                 LS3692™ 홀 헬스 슈퍼블렌드
-                녹차(camellia sinensis)추출물(잎)(EGCG로 표준화),
-                녹차(Camellia sinensis)추출물(잎),
-                키위(Actinidia chinensis)추출물(열매),
-                무화과(Ficus carica)추출물(열매),
-                파파야(Carica papaya)추출물(열매),
+                녹차(camellia sinensis)추출물(잎)(EGCG로 표준화)
+                녹차(Camellia sinensis)추출물(잎)
+                키위(Actinidia chinensis)추출물(열매)
+                무화과(Ficus carica)추출물(열매)
+                파파야(Carica papaya)추출물(열매)
                 LactoSpore 바실러스코아귤런스
             </ingredient>
             <content>540mg</content>
@@ -394,7 +394,7 @@
             <ingredient>
                 애플 사이다 식초(Malus pumila)(열매)
             </ingredient>
-            <content>1,000mg</content>
+            <content>1000mg</content>
             <formulation>캡슐</formulation>
             <amount>180정</amount>
             <tag>운동 보조제</tag>
@@ -406,7 +406,7 @@
             <company>Life Extension</company>
             <ingredient>
                 디카페인녹차추출물(잎)
-                [폴리페놀 98%, EGCG 45%로 표준화]
+                [폴리페놀 98% EGCG 45%로 표준화]
             </ingredient>
             <content>725mg</content>
             <formulation>베지 캡슐</formulation>
@@ -448,7 +448,7 @@
             <company>Life Extension</company>
             <ingredient>
                 Ceratiq® 밀(Triticum vulgare)오일추출물
-                (당지질, 식물성세라마이드 및 글리코실세라마이드 제공)
+                (당지질 식물성세라마이드 및 글리코실세라마이드 제공)
             </ingredient>
             <content>350mg</content>
             <formulation>액상 베지 캡슐</formulation>
@@ -555,9 +555,9 @@
             <company>Life Extension</company>
             <ingredient>
                 MacuGuard® 고유혼합물
-                인지질, 금잔화(Tagetes erecta)추출물(꽃)
-                [유리루테인 10mg,
-                메소-제아잔틴 및 트랜스-제아잔틴 4mg],
+                인지질 금잔화(Tagetes erecta)추출물(꽃)
+                [유리루테인 10mg
+                메소-제아잔틴 및 트랜스-제아잔틴 4mg]
                 혼합카로티노이드[α-카로틴 1.24mg 제공]
             </ingredient>
             <content>173mg</content>

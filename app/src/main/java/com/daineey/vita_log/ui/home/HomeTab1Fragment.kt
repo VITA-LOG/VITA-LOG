@@ -6,21 +6,35 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+<<<<<<< HEAD
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+=======
+import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+>>>>>>> ec56cb6 (update 0.22)
 import com.daineey.vita_log.R
 import com.daineey.vita_log.database.DatabaseCRUD
 import com.daineey.vita_log.database.DatabaseHelper
 import com.daineey.vita_log.database.DatabaseHelper.Companion.DATABASE_NAME
 import com.daineey.vita_log.database.DatabaseHelper.Companion.DATABASE_VERSION
 import com.daineey.vita_log.databinding.FragmentHometab1Binding
+<<<<<<< HEAD
+=======
+import com.daineey.vita_log.ui.detail.SupplementDetail
+>>>>>>> ec56cb6 (update 0.22)
 import com.daineey.vita_log.ui.detail.keywordRequiredData
 
 class HomeTab1Fragment() : Fragment() {
     private var _binding: FragmentHometab1Binding? = null
     private val binding get() = _binding!!
+<<<<<<< HEAD
+=======
+    private lateinit var homeFragment: HomeTab1Fragment
+>>>>>>> ec56cb6 (update 0.22)
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,14 +42,22 @@ class HomeTab1Fragment() : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHometab1Binding.inflate(inflater, container, false)
+<<<<<<< HEAD
         val view = inflater.inflate(R.layout.fragment_hometab1, container, false)
 
         return view;
+=======
+        return _binding!!.root
+>>>>>>> ec56cb6 (update 0.22)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         healthKeyWordListener(view)
+<<<<<<< HEAD
+=======
+        supplementByTag(view)
+>>>>>>> ec56cb6 (update 0.22)
     }
 
     private fun healthKeyWordListener(view: View): Unit {
@@ -63,6 +85,7 @@ class HomeTab1Fragment() : Fragment() {
                 Log.d("buttons Iterator", buttons.toString())
 
                 val supplements = crud.getSupplementByKeyword(keyword)
+<<<<<<< HEAD
                 val navController = view.findNavController()
 
                 if (supplements.isNotEmpty()) {
@@ -84,14 +107,71 @@ class HomeTab1Fragment() : Fragment() {
                     Log.i("Destination", view.findNavController().currentDestination.toString())
                 } else {
                     Toast.makeText(context, "값이 없습니다.", LENGTH_SHORT).show()
+=======
+                val navController = findNavController()
+
+                val imageSrc = supplements.firstOrNull()?.imageName ?: "default_image_name"
+                val supplementName = supplements.firstOrNull()?.name ?: "default_image_name"
+                val companyName = supplements.firstOrNull()?.company ?: "default_image_name"
+
+                val action = MainHomeFragmentDirections.actionMainTab1(
+                    supplements.map {
+                        keywordRequiredData(
+                            keyword,
+                            it.imageName,
+                            it.company,
+                            it.name
+                        )
+                    }.toTypedArray()
+                )
+                navController.navigate(action)
+                Log.i("Destination", view.findNavController().currentDestination.toString())
+            }
+        }
+    }
+
+    private fun supplementByTag(view: View): Unit {
+        val items = listOf(
+            "item1", "item2", "item3", "item4", "item5", "item6"
+        )
+
+        for (itemTag in items) {
+            val itemView = view.findViewWithTag<View>(itemTag)
+            itemView?.setOnClickListener { clickedView ->
+                Log.i("tag", clickedView.tag.toString())
+                when (clickedView.tag) {
+                    "item1" -> navigateToDetailFragment("LactoBif 5 Probiotics")
+                    "item2" -> navigateToDetailFragment("Acidophilus Probiotic Blend")
+                    "item3" -> navigateToDetailFragment("AMPK Metabolic Activators")
+                    "item4" -> navigateToDetailFragment("ProbioSlim, Weight Loss Essentials")
+                    "item5" -> navigateToDetailFragment("Methyl Folate")
+                    "item6" -> navigateToDetailFragment("High Potency Vitamin B Complex")
+>>>>>>> ec56cb6 (update 0.22)
                 }
             }
         }
     }
 
+<<<<<<< HEAD
     override fun onDestroyView() {
         super.onDestroyView()
         // For Memory Leaking Prevent
+=======
+    private fun navigateToDetailFragment(supplementName: String) {
+        val supplementDetailFragment = SupplementDetail()
+        val args = Bundle()
+        args.putString("supplementName", supplementName)
+        supplementDetailFragment.arguments = args
+
+        val transaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragmentContainer, supplementDetailFragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+>>>>>>> ec56cb6 (update 0.22)
         _binding = null
     }
 }
