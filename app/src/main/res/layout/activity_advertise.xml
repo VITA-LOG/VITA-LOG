@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".my.AdvertiseActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,8 +12,8 @@
 
         <ImageView
             android:id="@+id/yogurtii"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
             android:src="@drawable/yogurtii1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -21,6 +22,7 @@
             android:id="@+id/yogurtii1"
             android:layout_width="410dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:text='
@@ -57,10 +59,10 @@
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:text='\n\n
-요거티 강남점   0507-1395-1833\n
-요거티 신촌점   0507-1313-2852\n
-요거티 화곡점   0507-1390-0737\n
-요거티 용산점   (10월 중 오픈예정)\n
+요거티 강남점   02-1395-1833\n
+요거티 신촌점   02-1313-2852\n
+요거티 화곡점   02-1390-0737\n
+요거티 용산점   02-6951-0457\n
 '
             android:textSize="24dp"
             android:textColor="@color/dark_gray"

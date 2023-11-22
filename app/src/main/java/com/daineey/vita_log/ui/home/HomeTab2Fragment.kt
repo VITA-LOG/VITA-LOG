@@ -8,9 +8,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.daineey.vita_log.R
 import com.daineey.vita_log.database.DatabaseCRUD
 import com.daineey.vita_log.database.DatabaseHelper
 import com.daineey.vita_log.database.Supplement
@@ -23,6 +25,7 @@ class HomeTab2Fragment : Fragment() {
 
     private var _binding: FragmentHometab2Binding? = null
     private val binding get() = _binding!!
+    private lateinit var callback: OnBackPressedCallback
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var buttonLoadMore: Button
@@ -97,7 +100,6 @@ class HomeTab2Fragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = SupplementAdapter(requireContext(), displayedSupplements)
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

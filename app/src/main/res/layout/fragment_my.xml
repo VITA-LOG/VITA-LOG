@@ -3,42 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.my.MyFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-<!--    <androidx.appcompat.widget.Toolbar-->
-<!--        android:id="@+id/toolbar"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="70dp"-->
-<!--        android:layout_marginTop="4dp"-->
-<!--        android:background="#FFFFFFFF"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent">-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/logo_image"-->
-<!--            android:layout_width="130dp"-->
-<!--            android:layout_height="30dp"-->
-<!--            android:src="@drawable/ic_logo" />-->
-
-<!--    </androidx.appcompat.widget.Toolbar>-->
-
     <TextView
         android:id="@+id/customer"
         android:layout_width="410dp"
         android:layout_height="50dp"
-        android:text="고객센터"
-        android:textSize="18dp"
-        android:textAlignment="viewStart"
         android:gravity="center"
         android:paddingLeft="20dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="고객센터"
+        android:textAlignment="viewStart"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlCompat" />
     <Button
         style="@style/TextButton"

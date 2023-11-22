@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".my.SponsorActivity">
 
     <TextView
@@ -17,7 +18,6 @@
         android:textSize="20dp"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:fontFamily="@font/roboto_black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

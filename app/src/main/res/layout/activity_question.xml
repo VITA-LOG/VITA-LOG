@@ -10,16 +10,28 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/title0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:text='자주묻는 질문'
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:id="@+id/title1"
             android:layout_width="410dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="80dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text='Q. 비타로그에는 어떤 서비스가 있나요?'
             android:textSize="16dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/purple_500"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -61,8 +73,7 @@
             android:paddingRight="20dp"
             android:text='Q. 영양제 정보에 대해 알고 싶어요.'
             android:textSize="16dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/purple_500"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/answer1"
@@ -97,8 +108,7 @@
             android:paddingRight="20dp"
             android:text='Q. 영양제 랭킹은 어떻게 선정되나요?'
             android:textSize="16dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/purple_500"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/answer2"
@@ -125,8 +135,7 @@
             android:paddingRight="20dp"
             android:text='Q. 영양제 검색은 어떻게 하나요?'
             android:textSize="16dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/purple_500"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/answer3"
@@ -161,8 +170,7 @@
             android:paddingRight="20dp"
             android:text='Q. AI 챗봇 서비스는 어떻게 이용하나요?'
             android:textSize="16dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/purple_500"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/answer4"
@@ -189,8 +197,7 @@
             android:paddingRight="20dp"
             android:text='Q. 서비스 관련 상담은 어디서 할 수 있나요?'
             android:textSize="16dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/purple_500"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/answer5"

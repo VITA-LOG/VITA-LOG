@@ -14,6 +14,7 @@
     <!-- 여기서부터 직접 추가한 색 -->
     <color name="yellow">#FFEB3B</color>
     <color name="light_yellow">#ECE24D</color>
+    <color name="super_light_yellow">#FFFFD7</color>
     <color name="light_gray">#CDCDCD</color>
     <color name="dark_gray">#3F3F3F</color>
 </resources>

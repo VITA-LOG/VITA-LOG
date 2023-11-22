@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
     tools:context=".ui.home.HomeTab1Fragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/white">
 
         <ImageView
             android:id="@+id/imageView"
@@ -21,13 +23,13 @@
             android:id="@+id/textView"
             style="@style/MyButtonStyle2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
+            android:layout_height="30dp"
             android:layout_gravity="start"
+            android:layout_marginTop="15dp"
             android:background="@android:color/transparent"
-            android:fontFamily="@font/roboto_black"
-            android:text="@string/my_health_keyword"
-            android:textColor="@color/black" />
+            android:text="내 건강 키워드"
+            android:textColor="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <include
             android:layout_width="wrap_content"
@@ -39,13 +41,12 @@
         <TextView
             android:id="@+id/textview2"
             style="@style/MyButtonStyle2"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:layout_gravity="start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:fontFamily="@font/roboto_black"
-            android:text="@string/recommendation_supplements"
+            android:text="영양제 조합 추천"
             android:textColor="@color/black" />
 
         <!--  include 로 변경!  -->

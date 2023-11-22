@@ -2,12 +2,26 @@ package com.daineey.vita_log
 
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
+import android.speech.SpeechRecognizer
 import android.util.Log
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
+import android.widget.Button
+import android.widget.Gallery
+import android.widget.ImageView
+import androidx.activity.OnBackPressedCallback
+import androidx.activity.findViewTreeOnBackPressedDispatcherOwner
+import androidx.activity.result.ActivityResultCallback
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.camera.core.ImageAnalysis
+import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
@@ -15,8 +29,11 @@ import com.daineey.vita_log.database.DatabaseHelper
 import com.daineey.vita_log.database.DatabaseHelper.Companion.DATABASE_NAME
 import com.daineey.vita_log.database.DatabaseHelper.Companion.DATABASE_VERSION
 import com.daineey.vita_log.databinding.ActivityMainBinding
+import com.daineey.vita_log.my.SponsorActivity
 import com.daineey.vita_log.ui.search.SearchFragment
+import com.google.android.gms.vision.text.TextRecognizer
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.mlkit.vision.common.InputImage
 
 // Navigation Component 방식으로 완전 변경
 class MainActivity : AppCompatActivity() {
@@ -96,6 +113,9 @@ class MainActivity : AppCompatActivity() {
                             getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
                         imm.hideSoftInputFromWindow(v.windowToken, 0)
 
+                        binding.headerLayout.logoImage.visibility = View.VISIBLE
+                        binding.headerLayout.actionChat.visibility = View.VISIBLE
+                        binding.headerLayout.searchEditText.visibility = View.GONE
                         true
                     } else {
                         false
@@ -106,42 +126,20 @@ class MainActivity : AppCompatActivity() {
                 binding.headerLayout.actionChat.visibility = View.VISIBLE
                 binding.headerLayout.searchEditText.visibility = View.GONE
             }
-        }
 
 //      This will trigger the database creation and initialization
-        val dbHelper = DatabaseHelper(this, DATABASE_NAME, null, DATABASE_VERSION)
-        Log.d("Database", "Data inserted: $dbHelper")
+            val dbHelper = DatabaseHelper(this, DATABASE_NAME, null, DATABASE_VERSION)
+            Log.d("Database", "Data inserted: $dbHelper")
+        }
     }
-
-//    override fun onSupportNavigateUp() = findNavController(R.id.mainFragment).navigateUp()
-
-    /**
-     * @depreciate
-     * private fun setFragment(tag: String, fragment: Fragment) {
-     *         val manager: FragmentManager = supportFragmentManager
-     *         val fragTransaction = manager.beginTransaction()
-     *
-     *         // All existing fragments are hidden first.
-     *         for (existingFragment in manager.fragments) {
-     *             fragTransaction.hide(existingFragment)
-     *         }
-     *
-     *         var fragment = manager.findFragmentByTag(tag)
-     *
-     *         if (fragment == null){
-     *             fragment = when (tag) {
-     *                 TAG_HOME -> HomeFragment()
-     *                 TAG_SEARCH -> com.daineey.vita_log.ui.search.SearchFragment()
-     *                 TAG_MY -> com.daineey.vita_log.ui.my.MyFragment()
-     *                 else -> throw IllegalArgumentException("Unexpected tag: $tag")
-     *             }
-     *             fragTransaction.add(R.id.fragmentContainer, fragment, tag)
-     *         } else {
-     *             fragTransaction.show(fragment)
-     *         }
-     *
-     *         fragTransaction.commitAllowingStateLoss()
-     *     }
-     * */
-
+    override fun onBackPressed() {
+        if (binding.headerLayout.searchEditText.visibility == View.VISIBLE) {
+            binding.headerLayout.logoImage.visibility = View.VISIBLE
+            binding.headerLayout.actionChat.visibility = View.VISIBLE
+            binding.headerLayout.searchEditText.visibility = View.GONE
+        }
+        else {
+            super.onBackPressed()
+        }
+    }
 }

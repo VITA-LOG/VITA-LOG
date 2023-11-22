@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.home.HomeTab3Fragment"
     tools:ignore="SpeakableTextPresentCheck">
 
@@ -188,11 +189,10 @@
             app:layout_constraintTop_toBottomOf="@+id/article14"
             app:srcCompat="@drawable/article15"
             tools:ignore="SpeakableTextPresentCheck" />
-
         <TextView
             android:id="@+id/text1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:layout_weight="0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"

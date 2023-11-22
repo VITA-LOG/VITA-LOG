@@ -6,29 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".my.DeveloperActivity">
 
+    <TextView
+        android:id="@+id/develop_title"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text='
+        \n\n\n
+비타로그 개발자
+\n\n\n\n
+'
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat,TextSizeCheck" />
+
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="110dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="300dp"
         android:layout_marginLeft="20dp"
-        android:src="@drawable/yogurtii"
+        android:src="@drawable/yeongjin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/vitalog1"
-        android:theme="@style/link"
+        android:id="@+id/dev_name"
         android:layout_width="280dp"
         android:layout_height="100dp"
-        android:layout_marginTop="40dp"
-        android:text='
-김영진\n
-@0_z_in\n
-https://github.com/YoungJeansKR'
-        android:textSize="18dp"
-        android:textColor="@color/dark_gray"
+        android:layout_marginTop="305dp"
+        android:text='김영진\n'
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vitalog1"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="340dp"
         android:autoLink="web"
+        android:text='
+홍익대학교 컴퓨터공학과\n
+Insta: @0_z_in\n
+https://github.com/YoungJeansKR\n\n
+#PM #ML #Android #Ops'
+        android:textColor="@color/dark_gray"
+        android:textSize="16dp"
+        android:theme="@style/link"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/logo"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,24 +68,37 @@ https://github.com/YoungJeansKR'
 
     <ImageView
         android:id="@+id/logo1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="110dp"
+        android:layout_height="140dp"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
-        android:src="@drawable/yogurtii1"
+        android:src="@drawable/dain"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/dev_name2"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="45dp"
+        android:text='홍다인\n'
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo1"
+        app:layout_constraintTop_toBottomOf="@+id/vitalog1" />
 
     <TextView
         android:id="@+id/vitalog2"
         android:layout_width="280dp"
         android:layout_height="100dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:text='
-홍다인\n
-@da_ineey\n
-https://github.com/daineey'
-        android:textSize="18dp"
+홍익대학교 컴퓨터공학과\n
+Insta: @da_ineey\n
+https://github.com/daineey\n\n
+#UI #UX #Android #DB'
+        android:textSize="16dp"
         android:textColor="@color/dark_gray"
         android:theme="@style/link"
         android:autoLink="web"

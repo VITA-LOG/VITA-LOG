@@ -3,6 +3,7 @@
     android:id="@+id/flexboxLayout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@color/white"
     app:flexWrap="wrap"
     app:justifyContent="flex_start">
 
