@@ -18,8 +18,8 @@
   <img src="./images/9-1.jpg" width="24%" height="20%"/>
   <img src="./images/9-2.jpg" width="24%" height="20%"/>
   <img src="./images/9-8.jpg" width="24%" height="20%"/>
-  <img src="./images/9-9.png" width="24%" height="20%"/>
-  <img src="./images/10-1.png" width="24%" height="20%"/>
+  <img src="./images/9-9.png" width="24%" height="22%"/>
+  <img src="./images/10-1.png" width="24%" height="22%"/>
   <img src="./images/10-2.jpg" width="24%" height="20%"/>
   <img src="./images/9-3.jpg" width="24%" height="20%"/>
   <img src="./images/9-4.jpg" width="24%" height="20%"/>
