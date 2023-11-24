@@ -18,10 +18,14 @@
   <img src="./images/9-1.png" width="24%" height="20%"/>
   <img src="./images/9-2.png" width="24%" height="20%"/>
   <img src="./images/9-3.png" width="24%" height="20%"/>
-  <img src="./images/9-6.png" width="24%" height="20%"/>
-  <img src="./images/9-7.png" width="24%" height="20%"/>
   <img src="./images/9-4.png" width="24%" height="20%"/>
   <img src="./images/9-5.png" width="24%" height="20%"/>
+  <img src="./images/9-6.png" width="24%" height="20%"/>
+  <img src="./images/9-7.png" width="24%" height="20%"/>
+  <img src="./images/9-8.png" width="24%" height="20%"/>
+  <img src="./images/9-9.png" width="24%" height="20%"/>
+  <img src="./images/10-1.png" width="24%" height="20%"/>
+  <img src="./images/10-2.png" width="24%" height="20%"/>
 </p>
 
 ## UX Principle
