@@ -14,7 +14,7 @@
 
 ## Prototype
 
-<img src="./images/1-1.jpg" width="100%" height="100%"/>
+<img src="./images/1-1.png" width="100%" height="100%"/>
 
 ## Demonstration
 
