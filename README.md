@@ -12,7 +12,7 @@
 * <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=Firebase&logoColor=white"/>
 * <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white"/>
 
-## Prototype
+## Development
 
 <img src="./images/1-1.png" width="75%" height="75%"/>
 
