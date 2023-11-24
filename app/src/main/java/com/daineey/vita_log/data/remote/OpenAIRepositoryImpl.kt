@@ -85,7 +85,8 @@ class OpenAIRepositoryImpl @Inject constructor(
         val matchResult = regex.find(jsonString)
 
         if (matchResult != null && matchResult.groupValues.size > 1) {
-            return matchResult.groupValues[1]
+            val extractedText = matchResult.groupValues[1]
+            return extractedText.replace("\\n\\n", "\n\n").replace("\\n", "\n")
         }
 
         return " "
@@ -96,7 +97,8 @@ class OpenAIRepositoryImpl @Inject constructor(
         val matchResult = regex.find(jsonString)
 
         if (matchResult != null && matchResult.groupValues.size > 1) {
-            return matchResult.groupValues[1]
+            val extractedText = matchResult.groupValues[1]
+            return extractedText.replace("\\n\\n", "\n\n").replace("\\n", "\n")
         }
 
         return " "
