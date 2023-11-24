@@ -14,6 +14,10 @@
 
 ## Prototype
 
+<img src="./images/1-1.jpg" width="100%" height="100%"/>
+
+## Demonstration
+
 <p align="left">
   <img src="./images/9-1.jpg" width="24%" height="20%"/>
   <img src="./images/9-2.jpg" width="24%" height="20%"/>
