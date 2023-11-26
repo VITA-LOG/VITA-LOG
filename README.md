@@ -14,7 +14,7 @@
 
 ## Development
 
-<img src="./images/1-1.png" width="75%" height="75%"/>
+<img src="./images/1-1.png" width="100%" height="100%"/>
 
 ## Demonstration
 
