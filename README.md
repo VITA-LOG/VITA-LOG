@@ -35,7 +35,7 @@
 
 ## GPT-4 API Key
 
-Get an API KEY from the [OpenAI website](https://platform.openai.com).
+Get an API key from the [OpenAI website](https://platform.openai.com).
 
 Put the issued key in the following openAIApiKey line.
 
