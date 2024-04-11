@@ -68,3 +68,7 @@ const val conversationTestTag = "ConversationTestTag"
 VITALOG is a Hongik University graduation project with two developers contributing to it.
 
 VITALOG is currently maintained by [Yeong-Jin Kim](https://github.com/youngjeanskr), [Da-In Hong](https://github.com/daineey)
+
+## License
+
+VITALOG has a Apache 2.0 License, as found in the [LICENSE](LICENSE) file.
