@@ -1,10 +1,5 @@
 <img src="./images/1.png" width="100%" height="100%"/>
 
-## People
-
-* [YoungJeansKR](https://github.com/youngjeanskr "김영진")
-* [daineey](https://github.com/daineey "홍다인")
-
 ## Language / IDE
 
 * <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=Kotlin&logoColor=white"/>
@@ -67,3 +62,9 @@ const val conversationTestTag = "ConversationTestTag"
 ## YouTube
 
 [![Video Label](http://img.youtube.com/vi/spHKSBqX7LQ/0.jpg)](https://youtu.be/spHKSBqX7LQ?feature=shared)
+
+## The Team
+
+VITALOG is a Hongik University graduation project with two developers contributing to it.
+
+VITALOG is currently maintained by [Yeong-Jin Kim](https://github.com/youngjeanskr), [Da-In Hong](https://github.com/daineey)
