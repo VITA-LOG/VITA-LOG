@@ -1,10 +1,5 @@
 <img src="./images/1.png" width="100%" height="100%"/>
 
-## People
-
-* [YoungJeansKR](https://github.com/youngjeanskr "김영진")
-* [daineey](https://github.com/daineey "홍다인")
-
 ## Language / IDE
 
 * <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=Kotlin&logoColor=white"/>
@@ -33,6 +28,25 @@
   <img src="./images/10-3.jpg" width="24%" height="20%"/>
 </p>
 
+## GPT-4 API Key
+
+Get an API key from the [OpenAI website](https://platform.openai.com).
+
+Put the issued key in the following openAIApiKey line.
+
+```
+package com.daineey.vita_log.constants
+
+const val openAIApiKey = ""
+
+const val urlToImageAppIcon = "https://res.cloudinary.com/apideck/image/upload/v1672442492/marketplaces/ckhg56iu1mkpc0b66vj7fsj3o/listings/-4-ans_frontend_assets.images.poe.app_icon.png-26-8aa0a2e5f237894d_tbragv.png"
+const val urlToImageAuthor = "https://avatars.githubusercontent.com/u/33478798?v=4"
+const val urlToAvatarGPT = "app/src/main/res/drawable/ic_vitalog_app.png"
+const val urlToGithub = "https://github.com/YoungJensKR"
+
+const val conversationTestTag = "ConversationTestTag"
+```
+
 ## UX Principle
 
 <img src="./images/3.png" width="100%" height="100%"/>
@@ -48,3 +62,9 @@
 ## YouTube
 
 [![Video Label](http://img.youtube.com/vi/spHKSBqX7LQ/0.jpg)](https://youtu.be/spHKSBqX7LQ?feature=shared)
+
+## The Team
+
+VITALOG is a Hongik University graduation project with two developers contributing to it.
+
+VITALOG is currently maintained by [Yeong-Jin Kim](https://github.com/youngjeanskr), [Da-In Hong](https://github.com/daineey)
