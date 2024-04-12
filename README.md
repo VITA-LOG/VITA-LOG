@@ -71,4 +71,4 @@ VITALOG is currently maintained by [Yeong-Jin Kim](https://github.com/youngjeans
 
 ## License
 
-VITALOG has a Apache 2.0 License, as found in the [LICENSE](LICENSE) file.
+VITALOG has a Apache License 2.0, as found in the [LICENSE](LICENSE) file.
