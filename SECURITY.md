@@ -4,4 +4,4 @@ If you believe you have found a security vulnerability in VITALOG, we encourage 
 
 Please report security issues using [Google Bug Hunters reporting form](https://g.co/vulnz)
 
-Note that you'll need to be invited to our program, so send us a quick email at kyj950514@gmail.com if you've found a vulnerability.
+Please feel free to submit vulnerability reports to our private bug bounty program at kyj950514@gmail.com if you've found a vulnerability.
