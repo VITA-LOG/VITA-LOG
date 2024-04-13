@@ -15,9 +15,9 @@ VITALOG provides three high-level features:
 - [Development](#development)
   - [Prototype](#prototype)
   - [Demonstration](#demonstration)
+  - [LanguageIDE](#languageide)
   - [YouTube](#youtube)
-  - [Language/IDE](#language/ide)
-- [UI/UX](#ui/ux)
+- [Design](#design)
   - [UX Principle](#ux-principle)
   - [Service Map](#service-map)
   - [BluePrint](#blueprint)
@@ -51,7 +51,7 @@ VITALOG provides three high-level features:
   <img src="./images/10-3.jpg" width="24%" height="20%"/>
 </p>
 
-### Language/IDE
+### LanguageIDE
 
 * <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=Kotlin&logoColor=white"/>
 * <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=Android Studio&logoColor=white"/>
@@ -62,7 +62,7 @@ VITALOG provides three high-level features:
 
 [![Video Label](http://img.youtube.com/vi/spHKSBqX7LQ/0.jpg)](https://youtu.be/spHKSBqX7LQ?feature=shared)
 
-## UI/UX
+## Design
 
 ### UX Principle
 
