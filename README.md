@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-- [Development](#development)
+- [Development]
   - [A GPU-Ready Tensor Library](#a-gpu-ready-tensor-library)
   - [Dynamic Neural Networks: Tape-Based Autograd](#dynamic-neural-networks-tape-based-autograd)
   - [Python First](#python-first)
