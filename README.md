@@ -21,7 +21,8 @@ VITALOG provides three high-level features:
   - [UX Principle](#ux-principle)
   - [Service Map](#service-map)
   - [BluePrint](#blueprint)
-- [GPT-4 API Key](#gpt-4-api-key)
+- [Getting Started](#getting-started)
+  - [GPT-4 API Key](#gpt-4-api-key)
 - [The Team](#the-team)
 - [License](#license)
 
@@ -50,16 +51,16 @@ VITALOG provides three high-level features:
   <img src="./images/10-3.jpg" width="24%" height="20%"/>
 </p>
 
-### YouTube
-
-[![Video Label](http://img.youtube.com/vi/spHKSBqX7LQ/0.jpg)](https://youtu.be/spHKSBqX7LQ?feature=shared)
-
 ### Language/IDE
 
 * <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=Kotlin&logoColor=white"/>
 * <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=Android Studio&logoColor=white"/>
 * <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=Firebase&logoColor=white"/>
 * <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white"/>
+
+### YouTube
+
+[![Video Label](http://img.youtube.com/vi/spHKSBqX7LQ/0.jpg)](https://youtu.be/spHKSBqX7LQ?feature=shared)
 
 ## UI/UX
 
@@ -74,6 +75,8 @@ VITALOG provides three high-level features:
 ### BluePrint
 
 <img src="./images/2-1.png" width="100%" height="100%"/>
+
+## Getting Started
 
 ### GPT-4 API Key
 
@@ -94,12 +97,12 @@ const val urlToGithub = "https://github.com/YoungJensKR"
 const val conversationTestTag = "ConversationTestTag"
 ```
 
-### The Team
+## The Team
 
 VITALOG is a Hongik University graduation project with two developers contributing to it.
 
 VITALOG is currently maintained by [Yeong-Jin Kim](https://github.com/youngjeanskr), [Da-In Hong](https://github.com/daineey)
 
-### License
+## License
 
 VITALOG has a Apache License 2.0, as found in the [LICENSE](LICENSE) file.
