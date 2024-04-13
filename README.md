@@ -1,21 +1,24 @@
 <img src="./images/1.png" width="100%" height="100%"/>
 
-VITALOG is an abbreviation of Vitamin + V-log, which is an app service for managing supplement information and related health history.
+--------------------------------------------------------------------------------
 
+VITALOG is an abbreviation of Vitamin + V-log, which is an app service for managing supplement information and related health history.
 Nowadays, awareness and issues of the health and wellness are growing, one of the factors of health care is taking nutritional supplement.
 We are going to proceed with a project of nutritional coaching application project through various nutritional contents.
 
-VITALOG provides three high-level features:
-- Various nutrition information and latest news/paper contents, and customized nutritional coaching based on user health condition.
-- Manage of health records.
-- Search supplement product (detailed information) easily by OCR image search, and do free Q&A about nutritional supplement, run by the LLM AI Chatbot.
+VITALOG provides five high-level features:
+- Nutrition information
+- Customized nutritional coaching based on user health condition
+- Latest news/paper contents
+- Database search and OCR image search
+- GPT-4 AI Chatbot
 
 <!-- toc -->
 
 - [Development](#development)
   - [Prototype](#prototype)
   - [Demonstration](#demonstration)
-  - [LanguageIDE](#languageide)
+  - [Language/IDE](#language/ide)
   - [YouTube](#youtube)
 - [Design](#design)
   - [UX Principle](#ux-principle)
@@ -51,7 +54,7 @@ VITALOG provides three high-level features:
   <img src="./images/10-3.jpg" width="24%" height="20%"/>
 </p>
 
-### LanguageIDE
+### Language/IDE
 
 * <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=Kotlin&logoColor=white"/>
 * <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=Android Studio&logoColor=white"/>
