@@ -1,32 +1,25 @@
 <img src="./images/1.png" width="100%" height="100%"/>
 
+VITALOG is an abbreviation of Vitamin + V-log, which is an app service for managing supplement information and related health history.
+
+Nowadays, awareness and issues of the health and wellness are growing, one of the factors of health care is taking nutritional supplement.
+We are going to proceed with a project of nutritional coaching application project through various nutritional contents.
+
+VITALOG provides three high-level features:
+- Various nutrition information and latest news/paper contents, and customized nutritional coaching based on user health condition.
+- Manage of health records.
+- Search supplement product (detailed information) easily by OCR image search, and do free Q&A about nutritional supplement, run by the LLM AI Chatbot.
+
 <!-- toc -->
 
-- [Development]
-  - [A GPU-Ready Tensor Library](#a-gpu-ready-tensor-library)
-  - [Dynamic Neural Networks: Tape-Based Autograd](#dynamic-neural-networks-tape-based-autograd)
-  - [Python First](#python-first)
-  - [Imperative Experiences](#imperative-experiences)
-  - [Fast and Lean](#fast-and-lean)
-  - [Extensions Without Pain](#extensions-without-pain)
-- [Installation](#installation)
-  - [Binaries](#binaries)
-    - [NVIDIA Jetson Platforms](#nvidia-jetson-platforms)
-  - [From Source](#from-source)
-    - [Prerequisites](#prerequisites)
-    - [Install Dependencies](#install-dependencies)
-    - [Get the PyTorch Source](#get-the-pytorch-source)
-    - [Install PyTorch](#install-pytorch)
-      - [Adjust Build Options (Optional)](#adjust-build-options-optional)
-  - [Docker Image](#docker-image)
-    - [Using pre-built images](#using-pre-built-images)
-    - [Building the image yourself](#building-the-image-yourself)
-  - [Building the Documentation](#building-the-documentation)
-  - [Previous Versions](#previous-versions)
-- [Getting Started](#getting-started)
-- [Resources](#resources)
-- [Communication](#communication)
-- [Releases and Contributing](#releases-and-contributing)
+- [Development](#development)
+- [Demonstration](#demonstration)
+- [UX Principle](#ux-principle)
+- [Service Map](#service-map)
+- [BluePrint](#blueprint)
+- [YouTube](#youtube)
+- [Language / IDE](#language-ide)
+- [GPT-4 API Key](#gpt-4-api-key)
 - [The Team](#the-team)
 - [License](#license)
 
