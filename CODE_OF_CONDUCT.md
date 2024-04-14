@@ -1,4 +1,4 @@
-# VITA LOG Code of Conduct
+# VITALOG Code of Conduct
 
 ## Our Pledge
 
