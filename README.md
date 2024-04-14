@@ -2,11 +2,11 @@
 
 --------------------------------------------------------------------------------
 
-VITALOG is an abbreviation of Vitamin + V-log, which is an app service for managing supplement information and related health history.
+VITA LOG is an abbreviation of Vitamin + V-log, which is an app service for managing supplement information and related health history.
 Nowadays, awareness and issues of the health and wellness are growing, one of the factors of health care is taking nutritional supplement.
 We are going to proceed with a project of nutritional coaching application project through various nutritional contents.
 
-VITALOG provides five high-level features:
+VITA LOG provides five high-level features:
 - Nutrition information
 - Customized nutritional coaching based on user health condition
 - Latest news/paper contents
