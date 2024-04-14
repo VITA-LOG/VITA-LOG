@@ -2,11 +2,11 @@
 
 --------------------------------------------------------------------------------
 
-VITA LOG is an abbreviation of Vitamin + V-log, which is an app service for managing supplement information and related health history.
+VITALOG is an abbreviation of Vitamin + V-log, which is an app service for managing supplement information and related health history.
 Nowadays, awareness and issues of the health and wellness are growing, one of the factors of health care is taking nutritional supplement.
 We are going to proceed with a project of nutritional coaching application project through various nutritional contents.
 
-VITA LOG provides five high-level features:
+VITALOG provides five high-level features:
 - Nutrition information
 - Customized nutritional coaching based on user health condition
 - Latest news/paper contents
@@ -102,10 +102,10 @@ const val conversationTestTag = "ConversationTestTag"
 
 ## The Team
 
-VITA LOG is a Hongik University graduation project with two developers contributing to it.
+VITALOG is a Hongik University graduation project with two developers contributing to it.
 
-VITA LOG is currently maintained by [Yeong-Jin Kim](https://github.com/youngjeanskr), [Da-In Hong](https://github.com/daineey)
+VITALOG is currently maintained by [Yeong-Jin Kim](https://github.com/youngjeanskr), [Da-In Hong](https://github.com/daineey)
 
 ## License
 
-VITA LOG has a Apache License 2.0, as found in the [LICENSE](LICENSE) file.
+VITALOG has a Apache License 2.0, as found in the [LICENSE](LICENSE) file.
