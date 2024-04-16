@@ -18,7 +18,7 @@ VITALOG provides five high-level features:
 - [Development](#development)
   - [Prototype](#prototype)
   - [Demonstration](#demonstration)
-  - [IDE](#ide)
+  - [Language/IDE](#language-ide)
   - [YouTube](#youtube)
 - [Design](#design)
   - [UX Principle](#ux-principle)
@@ -54,7 +54,7 @@ VITALOG provides five high-level features:
   <img src="./images/10-3.jpg" width="24%" height="20%"/>
 </p>
 
-### IDE
+### Language/IDE
 
 * <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=Kotlin&logoColor=white"/>
 * <img src="https://img.shields.io/badge/Android Studio-3DDC84?style=flat&logo=Android Studio&logoColor=white"/>
