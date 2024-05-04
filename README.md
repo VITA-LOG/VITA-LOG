@@ -12,7 +12,7 @@ VITALOG provides five high-level features:
 - Latest news/paper contents
 - Database search and OCR image search
 - GPT-4 AI Chatbot
-dd
+
 <!-- toc -->
 
 - [Development](#development)
